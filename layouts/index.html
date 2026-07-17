@@ -1,0 +1,28 @@
+{{ define "main" }}
+
+{{ $portrait := resources.Get "images/birgit.jpg" }}
+{{ $portrait = $portrait.Resize "700x" }}
+
+<section class="hero">
+
+  <div class="hero-text">
+
+    {{ .Content }}
+
+    <p class="hero-links">
+      <a href="/blog/">Read my blog →</a>
+    </p>
+
+  </div>
+
+  <div class="hero-image">
+    <img
+      src="{{ $portrait.RelPermalink }}"
+      width="{{ $portrait.Width }}"
+      height="{{ $portrait.Height }}"
+      alt="Birgit Bader">
+  </div>
+
+</section>
+
+{{ end }}

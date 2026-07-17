@@ -1,0 +1,11 @@
+baseURL = "https://birgitbader.com/"
+locale = "en-us"
+title = "Birgit Bader"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+  [markup.goldmark.parser]
+    wrapStandAloneImageWithinParagraph = false
