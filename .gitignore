@@ -1,1 +1,11 @@
+# macOS
 .DS_Store
+
+# Hugo generated files
+/public/
+/resources/
+.hugo_build.lock
+/.hugo_cache/
+
+# VS Code
+.vscode/
