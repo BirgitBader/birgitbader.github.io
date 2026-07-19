@@ -14,6 +14,7 @@
   --max-width: 820px;
 }
 
+
 /* =========================
    BASE RESET
 ========================= */
@@ -22,248 +23,582 @@
   box-sizing: border-box;
 }
 
+
 body {
   margin: 0;
+
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
   background: var(--bg);
+
   color: var(--text);
+
   line-height: 1.75;
+
   -webkit-font-smoothing: antialiased;
 }
 
+
 a {
   color: var(--accent);
+
   text-decoration: none;
 }
+
 
 a:hover {
   text-decoration: underline;
 }
+
 
 /* =========================
    TYPOGRAPHY
 ========================= */
 
 h1, h2, h3 {
+
   line-height: 1.2;
+
   margin: 0 0 1rem 0;
+
 }
+
 
 h1 {
+
   font-size: 2rem;
+
 }
+
 
 h2 {
+
   font-size: 1.4rem;
+
   margin-top: 2.5rem;
+
 }
 
+
 p {
+
   margin: 0 0 1.2em 0;
+
   max-width: 68ch;
+
 }
+
 
 /* =========================
    HEADER / NAV
 ========================= */
 
 header {
-  background: var(--accent); /* sage */
+
+  background: var(--accent);
+
   padding: 18px 32px;
+
 }
+
 
 nav {
+
   display: flex;
+
   gap: 18px;
+
   align-items: center;
+
 }
+
 
 nav a {
+
   color: #ffffff;
+
   font-weight: 500;
+
   font-size: 0.95rem;
+
   letter-spacing: 0.2px;
+
 }
 
+
 nav a:hover {
+
   opacity: 0.85;
+
   text-decoration: none;
+
 }
+
 
 /* =========================
    LAYOUT
 ========================= */
 
 main {
+
   max-width: var(--max-width);
+
   margin: 60px auto;
+
   padding: 0 20px;
+
 }
 
+
 /* =========================
-   HOME
+   HOME HERO
 ========================= */
 
 .home-hero {
-  padding: 40px 0 20px;
+
+  padding: 70px 20px;
+
 }
 
+
+/* Name */
+
+.hero-name {
+
+  font-size: clamp(3rem, 6vw, 4.2rem);
+
+  font-weight: 600;
+
+  letter-spacing: -0.04em;
+
+  margin-bottom: 45px;
+
+}
+
+
+/* Text + image */
+
+.hero-content {
+
+  display: grid;
+
+  grid-template-columns: minmax(0, 1fr) 340px;
+
+  align-items: center;
+
+  gap: 90px;
+
+}
+
+
+/* Text */
+
+.hero-text {
+
+  max-width: 560px;
+
+}
+
+
+.hero-text p {
+
+  font-size: 1.1rem;
+
+  line-height: 1.8;
+
+}
+
+
+.hero-text p:first-of-type {
+
+  font-size: 1.25rem;
+
+  color: var(--muted);
+
+}
+
+
+.hero-text strong {
+
+  display: block;
+
+  font-size: 1.35rem;
+
+  font-weight: 500;
+
+  color: var(--text);
+
+  margin-bottom: 1rem;
+
+}
+
+
+/* About button */
+
+.hero-links {
+
+  margin-top: 2.5rem;
+
+}
+
+
+.hero-links a {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  padding: 8px 18px;
+
+  background: var(--accent);
+
+  color: #ffffff;
+
+  font-size: 0.9rem;
+
+  font-weight: 500;
+
+  border-radius: 6px;
+
+  transition: transform 0.2s ease, opacity 0.2s ease;
+
+}
+
+
+.hero-links a:hover {
+
+  text-decoration: none;
+
+  opacity: 0.9;
+
+  transform: translateY(-2px);
+
+}
+
+
+/* Portrait */
+
+.hero-image {
+
+  display: flex;
+
+  justify-content: center;
+
+}
+
+
+.hero-image img {
+
+  width: 100%;
+
+  max-width: 340px;
+
+  aspect-ratio: 3 / 4;
+
+  object-fit: cover;
+
+  border-radius: 24px;
+
+}
+
+
 /* =========================
-   ABOUT PAGE (clean essay style)
+   ABOUT PAGE
 ========================= */
 
 .about {
+
   max-width: 68ch;
+
   margin: 80px auto;
+
   padding: 0 24px;
+
 }
 
+
 .about-content p {
+
   font-size: 1.05rem;
+
   line-height: 1.85;
+
 }
+
 
 /* =========================
    BLOG LISTING
 ========================= */
 
 .blog-list {
+
   display: flex;
+
   flex-direction: column;
+
   gap: 28px;
+
 }
+
 
 .blog-item {
+
   padding-bottom: 18px;
+
   border-bottom: 1px solid rgba(0,0,0,0.08);
+
 }
+
 
 .blog-title {
+
   margin-bottom: 6px;
+
 }
+
 
 .blog-meta {
+
   font-size: 0.85rem;
+
   color: var(--muted);
+
   margin-bottom: 10px;
+
 }
 
+
 /* 2–3 line teaser clamp */
+
 .blog-excerpt {
+
   display: -webkit-box;
+
   -webkit-line-clamp: 3;
+
   -webkit-box-orient: vertical;
+
   overflow: hidden;
 
   opacity: 0.9;
+
 }
 
+
 /* continue reading */
+
 .read-more {
+
   display: inline-block;
+
   margin-top: 8px;
+
   font-size: 0.9rem;
+
   color: var(--accent);
+
 }
+
 
 /* =========================
    SINGLE POST
 ========================= */
 
 .post {
+
   max-width: 68ch;
+
   margin: 60px auto;
+
 }
+
 
 .post-meta {
+
   font-size: 0.85rem;
+
   color: var(--muted);
+
   margin-bottom: 24px;
+
 }
 
-/* reading time badge */
+
 .reading-time {
+
   font-size: 0.8rem;
+
   color: var(--muted);
+
   margin-left: 8px;
+
 }
+
 
 /* =========================
-   FOOTER (minimal editorial)
+   FOOTER
 ========================= */
 
 .site-footer {
+
   margin-top: 80px;
+
   padding: 34px 20px;
+
   background: var(--footer-bg);
+
 }
 
+
 .footer-inner {
+
   max-width: var(--max-width);
+
   margin: 0 auto;
 
   display: flex;
+
   justify-content: space-between;
+
   align-items: center;
+
   gap: 32px;
+
 }
+
 
 .footer-copyright {
+
   font-size: 0.9rem;
+
   color: var(--muted);
+
 }
+
 
 .footer-links {
+
   display: flex;
+
   align-items: center;
+
   gap: 22px;
+
   font-size: 0.9rem;
+
 }
+
 
 .footer-links a {
+
   color: var(--muted);
+
   display: inline-flex;
+
   align-items: center;
+
   transition: color 0.2s ease;
+
 }
 
+
 .footer-links a:hover {
+
   color: var(--accent);
+
   text-decoration: none;
+
 }
 
 
 /* LinkedIn Icon */
 
 .footer-social-icon {
+
   width: 21px;
+
   height: 21px;
+
   fill: var(--muted);
+
   display: block;
+
 }
+
 
 .footer-links a[aria-label="LinkedIn"]:hover .footer-social-icon {
+
   fill: var(--accent);
+
 }
 
 
-/* Responsive */
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 800px) {
+
+
+  .hero-name {
+
+    margin-bottom: 35px;
+
+  }
+
+
+  .hero-content {
+
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+
+  }
+
+
+  .hero-image {
+
+    order: -1;
+
+  }
+
+
+  .hero-image img {
+
+    max-width: 280px;
+
+  }
+
+}
+
 
 @media (max-width: 600px) {
 
+
   .site-footer {
+
     padding: 28px 20px;
+
   }
+
 
   .footer-inner {
+
     flex-direction: column;
+
     align-items: flex-start;
+
     gap: 20px;
+
   }
 
+
   .footer-links {
+
     flex-wrap: wrap;
+
     gap: 16px;
+
   }
 
 }

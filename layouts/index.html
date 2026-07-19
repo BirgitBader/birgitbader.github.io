@@ -3,24 +3,34 @@
 {{ $portrait := resources.Get "images/birgit.jpg" }}
 {{ $portrait = $portrait.Resize "700x" }}
 
-<section class="hero">
+<section class="home-hero">
 
-  <div class="hero-text">
+  <h1 class="hero-name">
+    Birgit Bader
+  </h1>
 
-    {{ .Content }}
+  <div class="hero-content">
 
-    <p class="hero-links">
-      <a href="/blog/">Read my blog →</a>
-    </p>
+    <div class="hero-text">
 
-  </div>
+      {{ .Content }}
 
-  <div class="hero-image">
-    <img
-      src="{{ $portrait.RelPermalink }}"
-      width="{{ $portrait.Width }}"
-      height="{{ $portrait.Height }}"
-      alt="Birgit Bader">
+      <p class="hero-links">
+        <a href="/about/">About me →</a>
+      </p>
+
+    </div>
+
+    <div class="hero-image">
+
+      <img
+        src="{{ $portrait.RelPermalink }}"
+        width="{{ $portrait.Width }}"
+        height="{{ $portrait.Height }}"
+        alt="Birgit Bader">
+
+    </div>
+
   </div>
 
 </section>

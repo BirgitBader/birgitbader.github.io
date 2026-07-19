@@ -2,10 +2,10 @@
 title: "Home"
 ---
 
-## Birgit Bader
+Diplomat in Tech. Technical Writer. Information Architect.
 
-Between systems and people, information does the work.
+**Between systems and people, information does the work.**
 
-Technical Communication. Organizational Clarity. Knowledge Strategy. Developer Experience.
+Reflections on information development, architecture, and documentation.
 
 
