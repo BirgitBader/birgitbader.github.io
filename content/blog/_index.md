@@ -1,5 +1,6 @@
 ---
 title: "Blog"
+description: "Thoughts on documentation, information architecture, API docs, and clarity in complex systems — by technical writer and information architect Birgit Bader."
 ---
 
 

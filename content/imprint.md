@@ -1,5 +1,6 @@
 ---
 title: "Impressum / Imprint"
+description: "Impressum und Kontaktangaben gemäß § 5 DDG für birgitbader.com — Birgit Bader, Hamburg."
 ---
 
 This website is operated from Germany. The following information is provided in accordance with German law (§ 5 DDG).

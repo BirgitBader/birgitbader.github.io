@@ -1,5 +1,6 @@
 ---
 title: "Datenschutzerklärung / Privacy Policy"
+description: "Datenschutzerklärung für birgitbader.com: welche Daten beim Besuch verarbeitet werden. Kein Tracking, keine Cookies, keine externen Schriftarten."
 ---
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:3rem;align-items:start;">

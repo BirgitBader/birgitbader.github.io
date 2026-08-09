@@ -1,6 +1,7 @@
 ---
 title: "Helping knowledge move"
 date: 2026-06-20
+description: "Technical communication, product ownership, knowledge management, AI — different roles, one pattern: helping expertise outlive the people who hold it."
 draft: false
 ---
 

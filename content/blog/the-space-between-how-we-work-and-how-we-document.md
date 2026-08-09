@@ -1,6 +1,7 @@
 ---
 title: "The space between how we work and how we document"
 date: 2026-04-18
+description: "Developers document as code, everyone else works in conversations and whiteboards. Maybe that gap isn't a problem to solve, but a space we're still learning."
 draft: false
 ---
 

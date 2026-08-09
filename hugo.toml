@@ -12,7 +12,10 @@ disableKinds = ["taxonomy", "term"]
 summaryLength = 40
 
 [params]
-  description = "Birgit Bader is a technical communication expert and information architect in Hamburg, Germany, writing about information development, documentation, and helping knowledge move."
+  # Fallback-Description fuer Startseite, 404 und Seiten ohne eigene.
+  # Max. ~160 Zeichen, sonst schneidet Google ab. Der Name steht im Titel
+  # direkt darueber, muss hier also nicht wiederholt werden.
+  description = "Technical communication expert and information architect in Hamburg. Writing about information development, documentation, and helping knowledge move."
   author = "Birgit Bader"
   ogImage = "/images/og-image.png"
   email = "diplomatintech@web.de"

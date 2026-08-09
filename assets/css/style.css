@@ -952,19 +952,11 @@ main {
 }
 
 
-/* 2–3 line teaser clamp */
+/* Keine CSS-Zeilenbegrenzung: die Laenge steuert das Template ueber
+   truncate. Ein Clamp wuerde das "…" am Ende wegschneiden — genau das
+   Zeichen, das signalisiert, dass der Text weitergeht. */
 
 .blog-excerpt {
-
-  display: -webkit-box;
-
-  -webkit-line-clamp: 3;
-
-  line-clamp: 3;
-
-  -webkit-box-orient: vertical;
-
-  overflow: hidden;
 
   color: var(--muted);
 

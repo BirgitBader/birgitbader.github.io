@@ -1,6 +1,7 @@
 ---
 title: "Magic moments happen between roles"
 date: 2026-05-03
+description: "The best part of being a technical writer isn't the writing. It's the moment at the whiteboard when developers, product, and UX finally see the same picture."
 draft: false
 ---
 

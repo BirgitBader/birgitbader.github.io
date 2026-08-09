@@ -28,12 +28,12 @@
             <span>{{ .ReadingTime }} min read</span>
         </div>
 
+        {{/* Bewusst immer der echte Textanfang des Beitrags — nicht die
+             description aus dem Frontmatter. Die ist fuer Google und
+             LinkedIn da; hier soll man dort weiterlesen, wo der Text
+             beginnt. Genau dafuer ist "Continue reading" da. */}}
         <p class="blog-excerpt">
-            {{ with .Description }}
-                {{ . }}
-            {{ else }}
-                {{ .Summary | plainify | truncate 220 }}
-            {{ end }}
+            {{ .Summary | plainify | truncate 200 }}
         </p>
 
         <a class="read-more" href="{{ .RelPermalink }}">

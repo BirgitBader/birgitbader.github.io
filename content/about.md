@@ -1,5 +1,6 @@
 ---
 title: "About"
+description: "Technical communication expert and information architect in Hamburg. 15+ years connecting engineering, product, UX, and business so knowledge can move."
 type: "about"
 ---
 
