@@ -1,0 +1,81 @@
+name: Deploy Hugo site to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  # Erlaubt einen manuellen Start ueber den Actions-Tab
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Laufende Deployments nicht abbrechen, aber auch nicht parallel ausfuehren
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    env:
+      # Gleiche Version wie lokal. "extended" ist zwingend: ohne sie
+      # schlaegt die WebP-Konvertierung der Bilder fehl.
+      HUGO_VERSION: 0.163.3
+      # Damit Beitragsdaten dieselbe Zeitzone nutzen wie lokal
+      TZ: Europe/Berlin
+    steps:
+      - name: Install Hugo (extended)
+        run: |
+          wget -q -O "${{ runner.temp }}/hugo.deb" \
+            "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb"
+          sudo dpkg -i "${{ runner.temp }}/hugo.deb"
+          hugo version
+
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Configure Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
+      # Spart Rechenzeit: die skalierten Bilder werden nicht bei jedem
+      # Lauf neu erzeugt, solange sich assets/ oder hugo.toml nicht aendern.
+      - name: Cache processed images
+        uses: actions/cache@v4
+        with:
+          path: resources/_gen
+          key: hugo-resources-${{ runner.os }}-${{ hashFiles('assets/**', 'hugo.toml') }}
+          restore-keys: |
+            hugo-resources-${{ runner.os }}-
+
+      # base_url kommt aus den Pages-Einstellungen: solange keine eigene
+      # Domain hinterlegt ist, ist das birgitbader.github.io — sobald
+      # birgitbader.com eingetragen wird, stellt es sich von selbst um.
+      - name: Build
+        run: hugo --gc --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./public
+
+  deploy:
+    name: Deploy
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

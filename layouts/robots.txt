@@ -1,4 +1,12 @@
+{{- if strings.Contains site.BaseURL "birgitbader.com" -}}
 User-agent: *
 Allow: /
 
 Sitemap: {{ "sitemap.xml" | absURL }}
+{{- else -}}
+# Testumgebung (noch nicht die echte Domain) — nicht indexieren.
+# Sobald birgitbader.com als Custom Domain hinterlegt ist, gibt diese
+# Datei automatisch wieder die Freigabe oben aus.
+User-agent: *
+Disallow: /
+{{- end }}

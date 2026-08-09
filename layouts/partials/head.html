@@ -33,6 +33,15 @@
 <meta name="author" content="{{ site.Params.author }}">
 <link rel="canonical" href="{{ .Permalink }}">
 
+{{- /* Nur die echte Domain darf in den Index. Solange die Seite unter
+       birgitbader.github.io (oder lokal) laeuft, bleibt sie auf noindex —
+       sonst entsteht spaeter Duplicate Content zur eigenen Domain.
+       Sobald die Custom Domain in den Pages-Einstellungen hinterlegt ist,
+       faellt das automatisch weg. */ -}}
+{{- if not (strings.Contains site.BaseURL "birgitbader.com") }}
+<meta name="robots" content="noindex, nofollow">
+{{- end }}
+
 {{- /* Social sharing (LinkedIn, X, Slack, WhatsApp …) */ -}}
 <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
 <meta property="og:site_name" content="{{ site.Title }}">
