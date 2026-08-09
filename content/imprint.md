@@ -1,5 +1,5 @@
 ---
-title: "Impressum/Imprint"
+title: "Impressum / Imprint"
 ---
 
 This website is operated from Germany. The following information is provided in accordance with German law (§ 5 DDG).

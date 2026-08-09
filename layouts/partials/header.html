@@ -1,11 +1,63 @@
+{{ $current := .RelPermalink }}
+
 <header class="site-header">
 
-    <nav class="nav">
+    <nav class="nav" id="site-nav" aria-label="Main" data-open="true">
 
-        <a href="/">Home</a>
-        <a href="/about/">About</a>
-        <a href="/blog/">Blog</a>
+        {{/* aria-label traegt den vollen Namen — Screenreader lesen also nie "BB". */}}
+        <a class="nav-brand" href="/" aria-label="Birgit Bader — home">
+            <span class="nav-brand-full" aria-hidden="true">Birgit Bader</span>
+            <span class="nav-brand-short" aria-hidden="true">BB</span>
+        </a>
+
+        <button class="nav-toggle" type="button"
+                aria-expanded="true"
+                aria-controls="nav-menu">
+            <span class="nav-toggle-bars" aria-hidden="true"></span>
+            <span class="nav-toggle-text">Menu</span>
+        </button>
+
+        <ul class="nav-menu" id="nav-menu">
+
+            <li><a href="/" {{ if eq $current "/" }}aria-current="page"{{ end }}>Home</a></li>
+            <li><a href="/about/" {{ if hasPrefix $current "/about/" }}aria-current="page"{{ end }}>About</a></li>
+            <li><a href="/blog/" {{ if hasPrefix $current "/blog/" }}aria-current="page"{{ end }}>Blog</a></li>
+
+        </ul>
 
     </nav>
 
 </header>
+
+{{/* Direkt hier ausgefuehrt: klappt das Menue zu, bevor gerendert wird.
+     Ohne JavaScript bleibt es offen — die Links sind also immer erreichbar. */}}
+<script>
+(function () {
+  var nav = document.getElementById('site-nav');
+  var btn = nav.querySelector('.nav-toggle');
+
+  function setOpen(open) {
+    nav.setAttribute('data-open', open ? 'true' : 'false');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+
+  setOpen(false);
+
+  btn.addEventListener('click', function () {
+    setOpen(nav.getAttribute('data-open') !== 'true');
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && nav.getAttribute('data-open') === 'true') {
+      setOpen(false);
+      btn.focus();
+    }
+  });
+
+  // Wechsel auf Desktopbreite: Zustand zuruecksetzen
+  var wide = window.matchMedia('(min-width: 641px)');
+  (wide.addEventListener ? wide.addEventListener.bind(wide, 'change') : wide.addListener.bind(wide))(function () {
+    setOpen(false);
+  });
+})();
+</script>

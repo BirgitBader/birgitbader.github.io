@@ -1,34 +1,50 @@
 {{ define "main" }}
 
-<h1>{{ .Title }}</h1>
+<header class="list-header">
 
-{{ .Content }}
+    <h1>{{ .Title }}</h1>
 
-{{ range .Pages }}
+    {{ with .Content }}
+        <div class="list-intro">{{ . }}</div>
+    {{ end }}
 
-<article class="post-preview">
+</header>
 
-    <h2>
-        <a href="{{ .RelPermalink }}">
-            {{ .Title }}
+<div class="blog-list">
+
+    {{ range .Pages }}
+
+    <article class="blog-item">
+
+        <h2 class="blog-title">
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </h2>
+
+        <div class="blog-meta">
+            <time datetime="{{ .Date.Format "2006-01-02" }}">
+                {{ .Date.Format "2 January 2006" }}
+            </time>
+            <span aria-hidden="true">·</span>
+            <span>{{ .ReadingTime }} min read</span>
+        </div>
+
+        <p class="blog-excerpt">
+            {{ with .Description }}
+                {{ . }}
+            {{ else }}
+                {{ .Summary | plainify | truncate 220 }}
+            {{ end }}
+        </p>
+
+        <a class="read-more" href="{{ .RelPermalink }}">
+            Continue reading<span aria-hidden="true"> →</span>
+            <span class="visually-hidden">: {{ .Title }}</span>
         </a>
-    </h2>
 
-    <div class="meta">
+    </article>
 
-        {{ .ReadingTime }} min read ·
-        {{ .Date.Format "2 January 2006" }}
+    {{ end }}
 
-    </div>
-
-    <p>{{ .Summary }}</p>
-
-    <a class="continue" href="{{ .RelPermalink }}">
-        Continue reading →
-    </a>
-
-</article>
-
-{{ end }}
+</div>
 
 {{ end }}

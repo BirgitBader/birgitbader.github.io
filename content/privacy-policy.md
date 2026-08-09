@@ -1,5 +1,5 @@
 ---
-title: "Datenschutzerklärung/Privacy Policy"
+title: "Datenschutzerklärung / Privacy Policy"
 ---
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:3rem;align-items:start;">
@@ -14,11 +14,19 @@ Der Schutz Ihrer persönlichen Daten ist mir wichtig. Personenbezogene Daten wer
 
 ### Hosting & Server-Logfiles
 
-Diese Website wird bei **[HOSTER EINFÜGEN]** gehostet. Beim Besuch der Website können technisch notwendige Informationen wie IP-Adresse, Datum und Uhrzeit des Zugriffs sowie Browsertyp automatisch in Server-Logfiles gespeichert werden.
+Diese Website wird als statische Website bei **GitHub Pages** gehostet, einem Dienst der GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA.
 
-### Cookies
+Beim Aufruf der Website werden technisch notwendige Informationen wie IP-Adresse, Datum und Uhrzeit des Zugriffs, übertragene Datenmenge, Browsertyp und Betriebssystem automatisch in Server-Logfiles von GitHub verarbeitet. Diese Verarbeitung ist technisch erforderlich, um die Website auszuliefern und ihre Stabilität und Sicherheit zu gewährleisten. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse am sicheren Betrieb der Website). Ich selbst habe keinen Zugriff auf diese Logfiles.
 
-Diese Website verwendet ausschließlich technisch notwendige Cookies. Tracking- oder Marketing-Cookies werden nicht eingesetzt.
+Dabei kann es zu einer Übermittlung von Daten in die USA kommen. GitHub, Inc. ist unter dem EU-US Data Privacy Framework zertifiziert; ergänzend gelten die Standardvertragsklauseln der EU-Kommission. Weitere Informationen: <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener noreferrer">GitHub Privacy Statement</a>.
+
+### Cookies, Tracking und externe Dienste
+
+Diese Website setzt **keine Cookies**. Es findet keine Analyse des Nutzerverhaltens statt, es werden keine Tracking- oder Marketing-Dienste eingesetzt und keine externen Schriftarten, Karten oder Videos nachgeladen.
+
+### Kontaktaufnahme per E-Mail
+
+Wenn Sie mich per E-Mail kontaktieren, verarbeite ich Ihre Angaben ausschließlich zur Bearbeitung Ihrer Anfrage (Art. 6 Abs. 1 lit. b bzw. lit. f DSGVO). Die Daten werden gelöscht, sobald sie nicht mehr benötigt werden.
 
 ### Ihre Rechte
 
@@ -46,11 +54,19 @@ Protecting your personal data is important to me. Personal data on this website 
 
 ### Hosting & Server Log Files
 
-This website is hosted by **[INSERT HOSTING PROVIDER]**. When you visit this website, technically necessary information such as your IP address, date and time of access, and browser type may be recorded in server log files.
+This website is a static site hosted on **GitHub Pages**, a service provided by GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA.
 
-### Cookies
+When you access this website, technically necessary information such as your IP address, date and time of access, amount of data transferred, browser type, and operating system is automatically processed in GitHub's server log files. This processing is technically required to deliver the website and to ensure its stability and security. The legal basis is Art. 6(1)(f) GDPR (legitimate interest in the secure operation of the website). I have no access to these log files myself.
 
-This website uses only technically necessary cookies. No tracking or marketing cookies are used.
+This may involve a transfer of data to the USA. GitHub, Inc. is certified under the EU-US Data Privacy Framework; the EU Commission's Standard Contractual Clauses apply in addition. For more information, see the <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener noreferrer">GitHub Privacy Statement</a>.
+
+### Cookies, Tracking, and Third-Party Services
+
+This website sets **no cookies**. There is no analysis of user behaviour, no tracking or marketing services are used, and no external fonts, maps, or videos are loaded.
+
+### Contacting Me by Email
+
+If you contact me by email, I process your details solely to handle your enquiry (Art. 6(1)(b) or (f) GDPR). The data is deleted once it is no longer required.
 
 ### Your Rights
 

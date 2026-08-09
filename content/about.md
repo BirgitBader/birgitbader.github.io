@@ -26,6 +26,6 @@ Curiosity brought me to this profession. Sharing what I've learned is what keeps
 
 If you're interested in my professional experience, you can view my CV here.
 
-<a href="/files/cv_birgit-bader.pdf" target="_blank" rel="noopener noreferrer">
-  View my CV →
+<a class="button" href="/files/cv_birgit-bader.pdf" target="_blank" rel="noopener noreferrer">
+  View my CV<span aria-hidden="true"> →</span><span class="visually-hidden"> (PDF, opens in a new tab)</span>
 </a>

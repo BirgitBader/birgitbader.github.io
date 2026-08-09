@@ -1,35 +1,47 @@
 {{ define "main" }}
 
 {{ $portrait := resources.Get "images/birgit.jpg" }}
-{{ $portrait = $portrait.Resize "700x" }}
+{{ $small := $portrait.Resize "440x webp q82" }}
+{{ $large := $portrait.Resize "880x webp q80" }}
 
-<section class="home-hero">
+<section class="hero">
 
-  <h1 class="hero-name">
-    Birgit Bader
-  </h1>
+  <div class="hero-text">
 
-  <div class="hero-content">
+    {{ with .Params.kicker }}
+      <p class="hero-kicker">{{ . }}</p>
+    {{ end }}
 
-    <div class="hero-text">
+    <h1 class="hero-name">Birgit Bader</h1>
 
+    <span class="hero-rule" aria-hidden="true"></span>
+
+    {{ with .Params.statement }}
+      <p class="hero-statement">{{ . }}</p>
+    {{ end }}
+
+    <div class="hero-body">
       {{ .Content }}
-
-      <p class="hero-links">
-        <a href="/about/">About me →</a>
-      </p>
-
     </div>
 
-    <div class="hero-image">
+    <p class="hero-actions">
+      <a class="link-action" href="/about/">About me<span class="link-action-arrow" aria-hidden="true">→</span></a>
+      <a class="link-action" href="/blog/">Read the blog<span class="link-action-arrow" aria-hidden="true">→</span></a>
+    </p>
 
-      <img
-        src="{{ $portrait.RelPermalink }}"
-        width="{{ $portrait.Width }}"
-        height="{{ $portrait.Height }}"
-        alt="Birgit Bader">
+  </div>
 
-    </div>
+  <div class="hero-image">
+
+    <img
+      src="{{ $small.RelPermalink }}"
+      srcset="{{ $small.RelPermalink }} 440w, {{ $large.RelPermalink }} 880w"
+      sizes="(max-width: 800px) 260px, 380px"
+      width="{{ $large.Width }}"
+      height="{{ $large.Height }}"
+      alt="Portrait of Birgit Bader"
+      fetchpriority="high"
+      decoding="async">
 
   </div>
 

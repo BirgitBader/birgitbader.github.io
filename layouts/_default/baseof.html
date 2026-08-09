@@ -2,25 +2,16 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-
-  <title>
-    {{ if .IsHome }}
-      Birgit Bader
-    {{ else }}
-      {{ .Title }} | Birgit Bader
-    {{ end }}
-  </title>
-
-  <link rel="stylesheet" href="/css/style.css">
+  {{ partial "head.html" . }}
 </head>
 
-<body>
+<body{{ if .IsHome }} class="is-home"{{ end }}>
+
+  <a class="skip-link" href="#main">Skip to content</a>
 
   {{ partial "header.html" . }}
 
-  <main class="container">
+  <main class="container" id="main" tabindex="-1">
     {{ block "main" . }}{{ end }}
   </main>
 

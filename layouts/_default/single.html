@@ -1,15 +1,21 @@
 {{ define "main" }}
 
+{{ $isPost := eq .Section "blog" }}
+
 <article class="post">
 
-  {{ if eq .Section "blog" }}
+  {{ if $isPost }}
+
+    <p class="post-back">
+      <a href="/blog/"><span aria-hidden="true">←</span> All posts</a>
+    </p>
 
     <div class="post-meta">
       <time datetime="{{ .Date.Format "2006-01-02" }}">
         {{ .Date.Format "January 2, 2006" }}
       </time>
 
-      <span>·</span>
+      <span aria-hidden="true">·</span>
 
       <span>{{ .ReadingTime }} min read</span>
     </div>
@@ -23,5 +29,27 @@
   </div>
 
 </article>
+
+{{ if $isPost }}
+
+  <nav class="post-nav" aria-label="More posts">
+
+    {{ with .PrevInSection }}
+      <a class="post-nav-item post-nav-next" href="{{ .RelPermalink }}">
+        <span class="post-nav-label">Newer post</span>
+        <span class="post-nav-title">{{ .Title }}</span>
+      </a>
+    {{ end }}
+
+    {{ with .NextInSection }}
+      <a class="post-nav-item post-nav-prev" href="{{ .RelPermalink }}">
+        <span class="post-nav-label">Older post</span>
+        <span class="post-nav-title">{{ .Title }}</span>
+      </a>
+    {{ end }}
+
+  </nav>
+
+{{ end }}
 
 {{ end }}
