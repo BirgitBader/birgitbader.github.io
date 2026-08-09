@@ -32,17 +32,24 @@
 
 {{ if $isPost }}
 
+  {{/* Achtung, Hugo-Stolperfalle: die Namen bedeuten das Gegenteil dessen,
+       was man erwartet. Die Beitragsliste ist nach Datum absteigend
+       sortiert (neueste zuerst), und "Next"/"Prev" beziehen sich auf die
+       Position in dieser Liste — nicht auf die Zeit:
+         .NextInSection = eine Position weiter oben = NEUER
+         .PrevInSection = eine Position weiter unten = AELTER
+       Nicht vertauschen. */}}
   <nav class="post-nav" aria-label="More posts">
 
-    {{ with .PrevInSection }}
-      <a class="post-nav-item post-nav-next" href="{{ .RelPermalink }}">
+    {{ with .NextInSection }}
+      <a class="post-nav-item post-nav-newer" href="{{ .RelPermalink }}">
         <span class="post-nav-label">Newer post</span>
         <span class="post-nav-title">{{ .Title }}</span>
       </a>
     {{ end }}
 
-    {{ with .NextInSection }}
-      <a class="post-nav-item post-nav-prev" href="{{ .RelPermalink }}">
+    {{ with .PrevInSection }}
+      <a class="post-nav-item post-nav-older" href="{{ .RelPermalink }}">
         <span class="post-nav-label">Older post</span>
         <span class="post-nav-title">{{ .Title }}</span>
       </a>
