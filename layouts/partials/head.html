@@ -73,9 +73,17 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta name="theme-color" content="#5F7360">
 
-{{- /* Stylesheet mit Cache-Busting-Fingerprint */ -}}
+{{- /* Stylesheet mit Cache-Busting-Fingerprint im Dateinamen.
+
+       Bewusst OHNE integrity="...": Bei einer Datei von der eigenen Domain
+       bringt Subresource Integrity keinen Sicherheitsgewinn — wer das CSS
+       manipulieren koennte, koennte genauso das HTML samt Pruefsumme
+       aendern. Sie schafft aber ein hartes Fehlerbild: Firmen-Proxys und
+       Virenscanner, die Inhalte unterwegs neu komprimieren, brechen die
+       Pruefsumme, und der Browser verwirft das Stylesheet dann komplett.
+       Der Fingerprint im Dateinamen leistet das, worum es hier geht. */ -}}
 {{- $css := resources.Get "css/style.css" | resources.Minify | resources.Fingerprint "sha256" }}
-<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+<link rel="stylesheet" href="{{ $css.RelPermalink }}">
 
 
 {{- /* RSS-Autodiscovery — auf jeder Seite auf den Site-Feed zeigen */ -}}

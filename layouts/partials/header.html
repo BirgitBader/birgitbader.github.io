@@ -34,7 +34,9 @@
 <script>
 (function () {
   var nav = document.getElementById('site-nav');
+  if (!nav) return;
   var btn = nav.querySelector('.nav-toggle');
+  if (!btn) return;
 
   function setOpen(open) {
     nav.setAttribute('data-open', open ? 'true' : 'false');
@@ -54,10 +56,17 @@
     }
   });
 
-  // Wechsel auf Desktopbreite: Zustand zuruecksetzen
-  var wide = window.matchMedia('(min-width: 641px)');
-  (wide.addEventListener ? wide.addEventListener.bind(wide, 'change') : wide.addListener.bind(wide))(function () {
-    setOpen(false);
-  });
+  // Wechsel auf Desktopbreite: Zustand zuruecksetzen.
+  // In try/catch, weil matchMedia in aelteren Browsern fehlen kann —
+  // das Menue soll auch dann bedienbar bleiben.
+  try {
+    var wide = window.matchMedia('(min-width: 641px)');
+    var onChange = function () { setOpen(false); };
+    if (wide.addEventListener) {
+      wide.addEventListener('change', onChange);
+    } else if (wide.addListener) {
+      wide.addListener(onChange);
+    }
+  } catch (e) { /* nicht kritisch */ }
 })();
 </script>

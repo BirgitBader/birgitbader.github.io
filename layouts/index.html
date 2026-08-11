@@ -1,8 +1,14 @@
 {{ define "main" }}
 
 {{ $portrait := resources.Get "images/birgit.jpg" }}
-{{ $small := $portrait.Resize "440x webp q82" }}
-{{ $large := $portrait.Resize "880x webp q80" }}
+
+{{/* WebP fuer alles ab Safari 14 / Chrome 32, JPEG als Rueckfall fuer
+     aeltere Browser. Ohne den Rueckfall bliebe dort schlicht eine
+     Leerstelle statt des Portraits. */}}
+{{ $webpSmall := $portrait.Resize "440x webp q82" }}
+{{ $webpLarge := $portrait.Resize "880x webp q80" }}
+{{ $jpgSmall  := $portrait.Resize "440x jpg q85" }}
+{{ $jpgLarge  := $portrait.Resize "880x jpg q82" }}
 
 <section class="hero">
 
@@ -33,15 +39,24 @@
 
   <div class="hero-image">
 
-    <img
-      src="{{ $small.RelPermalink }}"
-      srcset="{{ $small.RelPermalink }} 440w, {{ $large.RelPermalink }} 880w"
-      sizes="(max-width: 800px) 260px, 380px"
-      width="{{ $large.Width }}"
-      height="{{ $large.Height }}"
-      alt="Portrait of Birgit Bader"
-      fetchpriority="high"
-      decoding="async">
+    <picture>
+
+      <source
+        type="image/webp"
+        srcset="{{ $webpSmall.RelPermalink }} 440w, {{ $webpLarge.RelPermalink }} 880w"
+        sizes="(max-width: 800px) 260px, 380px">
+
+      <img
+        src="{{ $jpgSmall.RelPermalink }}"
+        srcset="{{ $jpgSmall.RelPermalink }} 440w, {{ $jpgLarge.RelPermalink }} 880w"
+        sizes="(max-width: 800px) 260px, 380px"
+        width="{{ $jpgLarge.Width }}"
+        height="{{ $jpgLarge.Height }}"
+        alt="Portrait of Birgit Bader"
+        fetchpriority="high"
+        decoding="async">
+
+    </picture>
 
   </div>
 
