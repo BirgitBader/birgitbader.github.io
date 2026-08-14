@@ -995,15 +995,15 @@ main {
 
 .post h1 {
 
-  font-size: clamp(1.9rem, 4.5vw, 2.6rem);
+  font-size: clamp(1.7rem, 3.4vw, 2.15rem);
 
   font-weight: 600;
 
-  letter-spacing: -0.03em;
+  letter-spacing: -0.02em;
 
-  line-height: 1.15;
+  line-height: 1.2;
 
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 
 }
 
@@ -1034,7 +1034,7 @@ main {
 
   font-size: 1.06rem;
 
-  line-height: 1.85;
+  line-height: 1.7;
 
 }
 
@@ -1100,12 +1100,21 @@ main {
 
   padding-left: 1.4em;
 
+  line-height: 1.55;
+
 }
 
 
 .post-content li {
 
-  margin-bottom: 0.5em;
+  margin-bottom: 0.4em;
+
+}
+
+
+.post-content li:last-child {
+
+  margin-bottom: 0;
 
 }
 
