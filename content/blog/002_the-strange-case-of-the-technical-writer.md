@@ -3,6 +3,7 @@ title: "The strange case of the „technical writer“"
 date: 2026-03-23
 description: "Writing is usually the smallest part of the job. A linguist's look at why 'technical writer' names the output instead of the thinking that makes it possible."
 draft: false
+slug: "the-strange-case-of-the-technical-writer"
 ---
 
 _Or: why „technical writer“ is the most misleading job title in tech._

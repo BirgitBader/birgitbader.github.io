@@ -3,6 +3,7 @@ title: "Finally talking about API docs"
 date: 2026-05-30
 description: "API docs are where a product becomes usable — and they now have two audiences. What makes them work for developers is exactly what makes them work for AI."
 draft: false
+slug: "finally-talking-about-api-docs"
 ---
 
 Friends, how much longer were you supposed to wait until I finally post something about API docs?!
