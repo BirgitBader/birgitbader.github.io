@@ -1557,6 +1557,37 @@ main {
 
 
 /* =========================
+   ZWEISPALTIGES DE/EN-LAYOUT (Impressum, Datenschutz)
+========================= */
+
+/* Jedes Abschnittspaar ist ein eigenes Grid-Item-Paar, dadurch bleiben
+   DE und EN zeilenweise auf gleicher Hoehe — unabhaengig davon, dass
+   die Sprachversionen unterschiedlich lang sind. Keine sichtbaren
+   Linien: rein visuelle Spaltenteilung ueber Grid, kein <table>. */
+
+.bilingual-table {
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  column-gap: 3rem;
+
+  row-gap: 2rem;
+
+  align-items: start;
+
+}
+
+
+.bilingual-table > div {
+
+  min-width: 0;
+
+}
+
+
+/* =========================
    RESPONSIVE
 ========================= */
 
@@ -1582,6 +1613,15 @@ main {
     gap: 40px;
 
     padding: 24px 0 56px;
+
+  }
+
+
+  .bilingual-table {
+
+    grid-template-columns: 1fr;
+
+    row-gap: 1.5rem;
 
   }
 
