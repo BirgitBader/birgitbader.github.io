@@ -24,6 +24,10 @@ summaryLength = 40
   locality = "Hamburg"
   country = "Germany"
 
+  # GoatCounter-Site-Code (das "MYCODE" aus https://MYCODE.goatcounter.com).
+  # Nach Registrierung auf goatcounter.com hier eintragen.
+  goatcounterCode = "diplomatintech"
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]

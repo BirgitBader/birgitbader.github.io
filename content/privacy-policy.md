@@ -1,6 +1,6 @@
 ---
 title: "Datenschutzerklärung / Privacy Policy"
-description: "Datenschutzerklärung für birgitbader.com: welche Daten beim Besuch verarbeitet werden. Kein Tracking, keine Cookies, keine externen Schriftarten."
+description: "Datenschutzerklärung für birgitbader.com: welche Daten beim Besuch verarbeitet werden. Keine Cookies, anonyme Reichweitenmessung, keine externen Schriftarten."
 ---
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:3rem;align-items:start;">
@@ -21,9 +21,17 @@ Beim Aufruf der Website werden technisch notwendige Informationen wie IP-Adresse
 
 Dabei kann es zu einer Übermittlung von Daten in die USA kommen. GitHub, Inc. ist unter dem EU-US Data Privacy Framework zertifiziert; ergänzend gelten die Standardvertragsklauseln der EU-Kommission. Weitere Informationen: <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener noreferrer">GitHub Privacy Statement</a>.
 
-### Cookies, Tracking und externe Dienste
+### Cookies und externe Dienste
 
-Diese Website setzt **keine Cookies**. Es findet keine Analyse des Nutzerverhaltens statt, es werden keine Tracking- oder Marketing-Dienste eingesetzt und keine externen Schriftarten, Karten oder Videos nachgeladen.
+Diese Website setzt **keine Cookies**. Es werden keine Marketing- oder Werbe-Tracking-Dienste eingesetzt und keine externen Schriftarten, Karten oder Videos nachgeladen. Eine anonyme, cookielose Reichweitenmessung erfolgt über GoatCounter (siehe unten).
+
+### Reichweitenmessung mit GoatCounter
+
+Diese Website nutzt **GoatCounter**, einen datenschutzfreundlichen, quelloffenen Webanalyse-Dienst (Martin Tournoij, Niederlande), um anonyme Zugriffszahlen pro Seite zu erfassen.
+
+GoatCounter setzt **keine Cookies** und speichert **keine IP-Adressen**: Die IP-Adresse wird bei einem Seitenaufruf nur kurzzeitig zur groben Standortbestimmung (Land/Region) herangezogen und danach verworfen. Es findet keine Profilbildung und kein geräteübergreifendes Tracking statt. Erfasst werden lediglich aggregierte, nicht auf Einzelpersonen rückführbare Informationen wie aufgerufene Seite, Referrer, Browsertyp, Betriebssystem und ungefährer Standort. Die Verarbeitung erfolgt auf Servern der Hetzner Online GmbH in Deutschland und Finnland, also innerhalb der EU.
+
+Da die IP-Adresse dabei kurzzeitig verarbeitet wird, stützt sich dies auf Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an anonymer Reichweitenmessung zur Verbesserung der Website). Eine Einwilligung ist nicht erforderlich, da kein Tracking-Cookie gesetzt und kein personenbezogenes Profil gebildet wird. Weitere Informationen: <a href="https://www.goatcounter.com/privacy" target="_blank" rel="noopener noreferrer">GoatCounter Privacy Policy</a>.
 
 ### Kontaktaufnahme per E-Mail
 
@@ -61,9 +69,17 @@ When you access this website, technically necessary information such as your IP 
 
 This may involve a transfer of data to the USA. GitHub, Inc. is certified under the EU-US Data Privacy Framework; the EU Commission's Standard Contractual Clauses apply in addition. For more information, see the <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener noreferrer">GitHub Privacy Statement</a>.
 
-### Cookies, Tracking, and Third-Party Services
+### Cookies and Third-Party Services
 
-This website sets **no cookies**. There is no analysis of user behaviour, no tracking or marketing services are used, and no external fonts, maps, or videos are loaded.
+This website sets **no cookies**. No marketing or advertising tracking services are used, and no external fonts, maps, or videos are loaded. Anonymous, cookieless traffic analysis is provided via GoatCounter (see below).
+
+### Analytics with GoatCounter
+
+This website uses **GoatCounter**, a privacy-friendly, open-source web analytics service (Martin Tournoij, the Netherlands), to record anonymous page-view counts.
+
+GoatCounter sets **no cookies** and does **not store IP addresses**: your IP address is used only briefly, at the moment of the page request, for an approximate location lookup (country/region) and is then discarded. There is no profiling and no cross-device tracking. Only aggregated information that cannot be traced back to an individual is recorded, such as the page visited, referrer, browser type, operating system, and approximate location. Data is processed on servers operated by Hetzner Online GmbH in Germany and Finland, i.e. within the EU.
+
+Since the IP address is briefly processed in this way, this is based on Art. 6(1)(f) GDPR (legitimate interest in anonymous traffic analysis to improve the website). No consent is required, as no tracking cookie is set and no personal profile is created. For more information, see the <a href="https://www.goatcounter.com/privacy" target="_blank" rel="noopener noreferrer">GoatCounter Privacy Policy</a>.
 
 ### Contacting Me by Email
 
