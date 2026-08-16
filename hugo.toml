@@ -8,6 +8,9 @@ enableRobotsTXT = true
 # Leere Taxonomie-Seiten nicht bauen (keine Tags/Categories im Einsatz)
 disableKinds = ["taxonomy", "term"]
 
+# CLAUDE.md-Dateien in content/ sind interne Konventionen, nicht fuer den Build
+ignoreFiles = ['CLAUDE\.md$']
+
 # Teaser-Laenge fuer .Summary (Woerter)
 summaryLength = 40
 
