@@ -8,6 +8,19 @@
         <div class="list-intro">{{ . }}</div>
     {{ end }}
 
+    {{ with site.Taxonomies.tags }}
+    <div class="categories">
+        <span class="categories-label">Categories</span>
+        <ul class="tag-index">
+            {{ range .Alphabetical }}
+            <li>
+                <a class="tag-pill" href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a>
+            </li>
+            {{ end }}
+        </ul>
+    </div>
+    {{ end }}
+
 </header>
 
 <div class="blog-list">
@@ -26,6 +39,14 @@
             </time>
             <span aria-hidden="true">·</span>
             <span>{{ .ReadingTime }} min read</span>
+
+            {{ with .GetTerms "tags" }}
+            <ul class="tag-list">
+                {{ range . }}
+                <li><a class="tag-pill" href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+                {{ end }}
+            </ul>
+            {{ end }}
         </div>
 
         {{/* Bewusst immer der echte Textanfang des Beitrags — nicht die

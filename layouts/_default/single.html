@@ -18,6 +18,14 @@
       <span aria-hidden="true">·</span>
 
       <span>{{ .ReadingTime }} min read</span>
+
+      {{ with .GetTerms "tags" }}
+      <ul class="tag-list">
+        {{ range . }}
+        <li><a class="tag-pill" href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+        {{ end }}
+      </ul>
+      {{ end }}
     </div>
 
   {{ end }}

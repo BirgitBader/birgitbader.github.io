@@ -5,11 +5,18 @@ title = "Birgit Bader"
 
 enableRobotsTXT = true
 
-# Leere Taxonomie-Seiten nicht bauen (keine Tags/Categories im Einsatz)
-disableKinds = ["taxonomy", "term"]
-
 # CLAUDE.md-Dateien in content/ sind interne Konventionen, nicht fuer den Build
 ignoreFiles = ['CLAUDE\.md$']
+
+# Die Tag-Uebersichtsseite (/tags/) wird nicht gebaut — die Kategorien
+# werden direkt auf /blog/ gelistet. Die einzelnen Tag-Seiten (/tags/xyz/)
+# bleiben ueber "term" aktiv.
+disableKinds = ["taxonomy"]
+
+# Nur "tags" als Taxonomie — "categories" ist ungenutzt und soll nicht
+# automatisch mitgebaut werden.
+[taxonomies]
+  tag = "tags"
 
 # Teaser-Laenge fuer .Summary (Woerter)
 summaryLength = 40

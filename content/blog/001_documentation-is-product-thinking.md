@@ -2,6 +2,7 @@
 title: "Documentation is product thinking"
 date: 2026-03-08
 description: "Good documentation doesn't start with writing. It grows out of requirements, specs, and product decisions — and fails when teams treat it as cleanup work."
+tags: ["documentation"]
 draft: false
 slug: "documentation-is-product-thinking"
 ---

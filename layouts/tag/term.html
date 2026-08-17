@@ -1,0 +1,46 @@
+{{ define "main" }}
+
+<header class="list-header">
+
+    <p class="post-back">
+      <a href="/blog/"><span aria-hidden="true">←</span> Blog</a>
+    </p>
+
+    <h1>Category: &ldquo;{{ .Title }}&rdquo;</h1>
+
+</header>
+
+<div class="blog-list">
+
+    {{ range .Pages }}
+
+    <article class="blog-item">
+
+        <h2 class="blog-title">
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </h2>
+
+        <div class="blog-meta">
+            <time datetime="{{ .Date.Format "2006-01-02" }}">
+                {{ .Date.Format "2 January 2006" }}
+            </time>
+            <span aria-hidden="true">·</span>
+            <span>{{ .ReadingTime }} min read</span>
+        </div>
+
+        <p class="blog-excerpt">
+            {{ .Summary | plainify | truncate 200 }}
+        </p>
+
+        <a class="read-more" href="{{ .RelPermalink }}">
+            Continue reading<span aria-hidden="true"> →</span>
+            <span class="visually-hidden">: {{ .Title }}</span>
+        </a>
+
+    </article>
+
+    {{ end }}
+
+</div>
+
+{{ end }}

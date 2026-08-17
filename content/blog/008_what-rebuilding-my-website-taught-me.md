@@ -2,6 +2,7 @@
 title: "What rebuilding my website taught me"
 date: 2026-08-16
 description: "Rebuilding my own website turned into a crash course on scaling decisions, unfamiliar territory, and documentation as a lifeline — with AI as a helpful guide, not an oracle."
+tags: ["career"]
 draft: false
 slug: "what-rebuilding-my-website-taught-me"
 ---
