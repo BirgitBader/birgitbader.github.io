@@ -7,12 +7,14 @@
 title: "Title Case-ish, sentence style is fine"
 date: YYYY-MM-DD
 description: "One to two sentences."
+tags: ["existing-tag"]
 draft: true
 slug: "slug-here"
 ---
 ```
 
 - `description`: not a summary — a contrast/hook sentence (concrete premise → broader takeaway), roughly 150–200 characters. Look at existing posts for tone before writing one.
+- `tags`: exactly one tag from the existing curated set — `documentation`, `career`, `technical writing craft`, `API docs`. Don't invent a new tag ad hoc; the set stays small and recurring on purpose (see root `CLAUDE.md`). If a post doesn't fit an existing tag, propose a new one explicitly rather than silently expanding the set.
 - `slug`: kebab-case.
   - If the title is a single clause, slug the full title (e.g. "The space between how we work and how we document" → `the-space-between-how-we-work-and-how-we-document`).
   - If the title has a colon (hook + subtitle), slug only the hook half (e.g. "Vibing with pride: what rebuilding my website taught me" → `vibing-with-pride`). Keeps URLs short and shareable.

@@ -10,6 +10,6 @@ Personal site + blog, built with Hugo. Content lives under `content/`, one Markd
 
 ## Area-specific conventions
 
-- `content/blog/` — post frontmatter (title, slug, description), filename pattern, proofreading checklist. See [content/blog/CLAUDE.md](content/blog/CLAUDE.md).
+- `content/blog/` — post frontmatter (title, slug, description, tags), filename pattern, proofreading checklist. See [content/blog/CLAUDE.md](content/blog/CLAUDE.md). Tags render as "Categories" on `/blog/` and on each post — there's no standalone `/tags/` overview page; it's deliberately disabled (`disableKinds = ["taxonomy"]` in `hugo.toml`) since the category list already lives on `/blog/`. Individual `/tags/<slug>/` pages still build, via `layouts/tag/term.html` (not `layouts/_default/term.html` — that path is silently ignored by this Hugo version once a custom `[taxonomies]` table is set).
 
 As conventions for other content areas (about page, imprint, etc.) come up, add a `CLAUDE.md` next to that content and link it here.
