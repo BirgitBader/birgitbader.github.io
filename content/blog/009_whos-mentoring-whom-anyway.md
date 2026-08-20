@@ -3,7 +3,7 @@ title: "Who’s mentoring whom, anyway?"
 date: 2026-08-20
 description: "She started as my intern, then my working student — and somewhere along the way, became my mentor, too. Mentoring, it turns out, was never a one-way street."
 tags: ["career"]
-draft: true
+draft: false
 slug: "whos-mentoring-whom-anyway"
 ---
 
