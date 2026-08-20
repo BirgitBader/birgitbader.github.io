@@ -2,7 +2,7 @@
 title: "Clarity over perfection"
 date: 2026-03-30
 description: "Technical writing is a decision-making job. AI handles precision — but someone still has to judge which details matter and which aren't worth the debate."
-tags: ["technical writing craft"]
+tags: ["craft"]
 draft: false
 slug: "clarity-over-perfection"
 ---
