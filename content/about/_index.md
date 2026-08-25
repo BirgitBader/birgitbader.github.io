@@ -28,13 +28,18 @@ Find more information about my professional experience here:
 
 <ul class="link-list">
   <li>
-    <a class="link-action" href="/files/cv_birgit-bader.pdf" target="_blank" rel="noopener noreferrer">
-      View my CV<span class="link-action-arrow" aria-hidden="true">→</span><span class="visually-hidden"> (PDF, opens in a new tab)</span>
+    <a class="link-action" href="/about/skills-and-strengths/" target="_blank" rel="noopener noreferrer">
+      Skills and strengths<span class="link-action-arrow" aria-hidden="true">→</span><span class="visually-hidden"> (opens in a new tab)</span>
     </a>
   </li>
   <li>
     <a class="link-action" href="/about/talks-and-publications/" target="_blank" rel="noopener noreferrer">
       Talks and publications<span class="link-action-arrow" aria-hidden="true">→</span><span class="visually-hidden"> (opens in a new tab)</span>
+    </a>
+  </li>
+  <li>
+    <a class="link-action" href="/files/cv_birgit-bader.pdf" target="_blank" rel="noopener noreferrer">
+      View my CV<span class="link-action-arrow" aria-hidden="true">→</span><span class="visually-hidden"> (PDF, opens in a new tab)</span>
     </a>
   </li>
 </ul>
