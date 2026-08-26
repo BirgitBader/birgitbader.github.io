@@ -5,7 +5,7 @@ description: "Datenschutzerklärung für birgitbader.com: welche Daten beim Besu
 
 <div class="bilingual-table">
 
-<div>
+<div lang="de">
 
 ### Allgemeiner Hinweis
 
@@ -14,7 +14,7 @@ Personenbezogene Daten werden auf dieser Website nur im technisch notwendigen Um
 
 </div>
 
-<div>
+<div lang="en">
 
 ### General information
 
@@ -23,7 +23,7 @@ Personal data on this website is processed only to the extent technically necess
 
 </div>
 
-<div>
+<div lang="de">
 
 ### Hosting und Server-Logfiles
 
@@ -38,7 +38,7 @@ Dabei kann es zu einer Übermittlung von Daten in die USA kommen. GitHub, Inc. i
 
 </div>
 
-<div>
+<div lang="en">
 
 ### Hosting and server log files
 
@@ -52,7 +52,7 @@ This may involve a transfer of data to the USA. GitHub, Inc. is certified under 
 
 </div>
 
-<div>
+<div lang="de">
 
 ### Cookies und externe Dienste
 
@@ -62,7 +62,7 @@ Eine anonyme, cookielose Reichweitenmessung erfolgt über [GoatCounter](#reichwe
 
 </div>
 
-<div>
+<div lang="en">
 
 ### Cookies and third-party services
 
@@ -72,7 +72,7 @@ Anonymous, cookieless traffic analysis is provided via [GoatCounter](#analytics-
 
 </div>
 
-<div>
+<div lang="de">
 
 ### Reichweitenmessung mit GoatCounter
 
@@ -88,7 +88,7 @@ Eine Einwilligung ist nicht erforderlich, da kein Tracking-Cookie gesetzt und ke
 
 </div>
 
-<div>
+<div lang="en">
 
 ### Analytics with GoatCounter
 
@@ -104,7 +104,7 @@ For more information, see the <a href="https://www.goatcounter.com/privacy" targ
 
 </div>
 
-<div>
+<div lang="de">
 
 ### Kontaktaufnahme per E-Mail
 
@@ -113,7 +113,7 @@ Die Daten werden gelöscht, sobald sie nicht mehr benötigt werden.
 
 </div>
 
-<div>
+<div lang="en">
 
 ### Contacting me by email
 
@@ -122,7 +122,7 @@ The data is deleted once it is no longer required.
 
 </div>
 
-<div>
+<div lang="de">
 
 ### Ihre Rechte
 
@@ -137,7 +137,7 @@ Sie haben das Recht auf:
 
 </div>
 
-<div>
+<div lang="en">
 
 ### Your rights
 
@@ -152,7 +152,7 @@ You have the right to:
 
 </div>
 
-<div>
+<div lang="de">
 
 ### Verantwortlicher und Kontakt
 
@@ -167,7 +167,7 @@ E-Mail: [diplomatintech@web.de](mailto:diplomatintech@web.de)
 
 </div>
 
-<div>
+<div lang="en">
 
 ### Controller and contact
 

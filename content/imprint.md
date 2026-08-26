@@ -5,21 +5,21 @@ description: "Impressum und Kontaktangaben gemäß § 5 DDG für birgitbader.com
 
 <div class="bilingual-table">
 
-<div>
+<div lang="de">
 
 Diese Website wird von Deutschland aus betrieben.
 Die folgenden Informationen werden gemäß deutschem Recht (§ 5 DDG) bereitgestellt.
 
 </div>
 
-<div>
+<div lang="en">
 
 This website is operated from Germany.
 The following information is provided in accordance with German law (§ 5 DDG).
 
 </div>
 
-<div>
+<div lang="de">
 
 **Angaben gemäß § 5 DDG**
 
@@ -30,7 +30,7 @@ Germany
 
 </div>
 
-<div>
+<div lang="en">
 
 **Information according to § 5 DDG (Germany)**
 
@@ -41,7 +41,7 @@ Germany
 
 </div>
 
-<div>
+<div lang="de">
 
 **Kontakt**
 
@@ -51,7 +51,7 @@ LinkedIn: <a href="https://www.linkedin.com/in/birgit-b-838503207" target="_blan
 
 </div>
 
-<div>
+<div lang="en">
 
 **Contact**
 
