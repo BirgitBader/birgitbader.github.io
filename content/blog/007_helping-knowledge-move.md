@@ -5,6 +5,7 @@ description: "Technical communication, product ownership, knowledge management, 
 tags: ["documentation"]
 draft: false
 slug: "helping-knowledge-move"
+aliases: ["/blog/20-06-2026-helping-knowledge-move/"]
 ---
 
 Usually, I do write a blog post first and then I bring a teaser on LinkedIn afterwards.

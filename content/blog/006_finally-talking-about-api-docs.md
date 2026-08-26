@@ -5,6 +5,7 @@ description: "API docs are where a product becomes usable — and they now have 
 tags: ["API docs"]
 draft: false
 slug: "finally-talking-about-api-docs"
+aliases: ["/blog/30-05-2026-finally-talking-about-api-docs/"]
 ---
 
 Friends, how much longer were you supposed to wait until I finally post something about API docs?!

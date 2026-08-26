@@ -5,6 +5,7 @@ description: "Writing is usually the smallest part of the job. A linguist's look
 tags: ["craft"]
 draft: false
 slug: "the-strange-case-of-the-technical-writer"
+aliases: ["/blog/23-03-2026-the-strange-case-of-the-technical-writer/", "/blog/23-03-26-the-strange-case-of-the-technical-writer/"]
 ---
 
 _Or: why „technical writer“ is the most misleading job title in tech._

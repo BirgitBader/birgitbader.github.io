@@ -5,6 +5,7 @@ description: "Technical writing is a decision-making job. AI handles precision â
 tags: ["craft"]
 draft: false
 slug: "clarity-over-perfection"
+aliases: ["/blog/30-03-2026-clarity-over-perfection/", "/blog/30-03-26-clarity-over-perfection/"]
 ---
 
 _Why technical writing is less about precision, and more about making the right decisions (even in the age of AI)._

@@ -5,6 +5,7 @@ description: "Good documentation doesn't start with writing. It grows out of req
 tags: ["documentation"]
 draft: false
 slug: "documentation-is-product-thinking"
+aliases: ["/blog/08-03-2026-documentation-is-product-thinking/"]
 ---
 
 _Why good documentation starts with product decisions, not last-minute writing._
