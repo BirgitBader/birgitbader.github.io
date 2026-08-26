@@ -1,48 +1,33 @@
 ---
 title: "Skills and strengths"
-description: "What I'm good at beyond my job history: where I create value, how I like to work, and where organizations get the most out of me."
+description: "The skills behind my CV, as a short, crisp list — not a repeat of the roles and timeline."
 type: "about"
 ---
 
-What I'm specifically good at, and where that's useful.
+I work in the space between different roles, responsibility levels, organizational units, and perspectives, turning friction into patterns, and patterns into solutions that scale.
 
-## Where I create value
+## What I do
 
-- Building bridges:
-I establish connections between different roles and hierarchical levels, including in the areas of engineering, product development, and business units, and act as a bridge between the ways of thinking and communicating of the various groups, ensuring that knowledge and expertise are properly understood and shared.
-
-- Turning tacit knowledge into lasting structure:
-Documentation, content strategy, information architecture: I build the structures that let expertise outlive the person who holds it, including making it usable for AI.
-
-- Building practices that scale with the team:
-API guidelines, developer portals, content governance: I build the processes and standards that let a growing organization stay consistent without slowing down.
-
-- Growing people, not just processes:
-Mentoring, community-building, lateral leadership without formal authority: I help others grow into their own expertise, and I've learned that the best mentoring runs both ways.
-
-## Where this matters
-
-- Scaling a technical communication or developer experience function as the company grows.
-- Building or fixing a documentation ecosystem so it doesn't rely on institutional memory.
-- Bridging the gap between how engineering documents and how the rest of the business works.
-- Setting up architectural guidelines, developer portals, or documentation-as-code practices.
-- Preparing knowledge for AI: making it structured, trustworthy, and reusable.
-- Mentoring technical communicators or building a community of practice around documentation and knowledge design.
-- Leading through influence, aligning teams and stakeholders without formal authority.
+- Sit with a team long enough to find where the friction actually is, not where people say it is.
+- Ask the questions nobody thought to ask, until the room lands on the same understanding.
+- Translate between engineering, product, and business until everyone's using the same words for the same thing.
+- Facilitate workshops that turn "kind of clear" into something everyone actually agrees on.
+- Spot the pattern across scattered conversations and turn it into a standard that scales.
+- Lead by doing — people follow the work, not a title.
+- Write and structure documentation and architectural guidelines that hold up as a product grows.
+- Mentor technical writers and young talent as well as build communities around documentation and knowledge management.
 
 ## How I work
 
-- I ask a lot of questions, not because I don't understand, but because I want everyone to reach the same understanding.
-- I'd rather translate between ways of working than force everyone to adopt a single approach.
+- I ask a lot of questions, not because I don't get it, but because I want everyone to land on the same page.
+- I translate between ways of working. I don't force one on everyone.
 - I like pioneering: the role nobody's had before is often where I do my best work.
 - I've learned as much from people I was supposed to be teaching.
-- The questions I keep coming back to, when looking at an organization that scales fast: Where is growth creating friction for teams or the organization? What feels harder than it did a year ago?
+- The questions I keep coming back to when a team scales fast: Where is growth creating friction? What feels harder than it did a year ago?
 
-## How I think
+## More of this, in writing
 
-These strengths show up in how I write, not just in the (mostly internal) work behind them.
+- [My blog](/blog/)
+- [Talks and publications](/about/talks-and-publications/)
 
-- [My blog](/blog/) — where I think out loud about documentation, product thinking, and cross-team collaboration.
-- [Talks and publications](/about/talks-and-publications/) — where I've shared some of this externally.
-
-For the roles and timeline behind all this, see my [CV](/files/cv_birgit-bader.pdf).
+For the roles and timeline, see my [CV](/files/cv_birgit-bader.pdf).
