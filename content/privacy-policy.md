@@ -34,7 +34,7 @@ Diese Verarbeitung ist technisch erforderlich, um die Website auszuliefern und i
 Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse am sicheren Betrieb der Website).
 Ich selbst habe keinen Zugriff auf diese Logfiles.
 
-Dabei kann es zu einer Übermittlung von Daten in die USA kommen. GitHub, Inc. ist unter dem EU-US Data Privacy Framework zertifiziert; ergänzend gelten die Standardvertragsklauseln der EU-Kommission. Weitere Informationen: <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener noreferrer">GitHub Privacy Statement</a>.
+Dabei kann es zu einer Übermittlung von Daten in die USA kommen. GitHub, Inc. ist unter dem EU-US Data Privacy Framework zertifiziert; ergänzend gelten die Standardvertragsklauseln der EU-Kommission. Weitere Informationen: <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener noreferrer">GitHub Privacy Statement<span class="visually-hidden"> (opens in a new tab)</span></a>.
 
 </div>
 
@@ -48,7 +48,7 @@ When you access this website, technically necessary information such as your IP 
 This processing is technically required to deliver the website and to ensure its stability and security. The legal basis is Art. 6(1)(f) GDPR (legitimate interest in the secure operation of the website).
 I have no access to these log files myself.
 
-This may involve a transfer of data to the USA. GitHub, Inc. is certified under the EU-US Data Privacy Framework; the EU Commission's Standard Contractual Clauses apply in addition. For more information, see the <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener noreferrer">GitHub Privacy Statement</a>.
+This may involve a transfer of data to the USA. GitHub, Inc. is certified under the EU-US Data Privacy Framework; the EU Commission's Standard Contractual Clauses apply in addition. For more information, see the <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener noreferrer">GitHub Privacy Statement<span class="visually-hidden"> (opens in a new tab)</span></a>.
 
 </div>
 
@@ -84,7 +84,7 @@ Erfasst werden lediglich aggregierte, nicht auf Einzelpersonen rückführbare In
 Die Verarbeitung erfolgt auf Servern der Hetzner Online GmbH in Deutschland und Finnland, also innerhalb der EU.
 
 Da die IP-Adresse dabei kurzzeitig verarbeitet wird, stützt sich dies auf Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an anonymer Reichweitenmessung zur Verbesserung der Website).
-Eine Einwilligung ist nicht erforderlich, da kein Tracking-Cookie gesetzt und kein personenbezogenes Profil gebildet wird. Weitere Informationen: <a href="https://www.goatcounter.com/privacy" target="_blank" rel="noopener noreferrer">GoatCounter Privacy Policy</a>.
+Eine Einwilligung ist nicht erforderlich, da kein Tracking-Cookie gesetzt und kein personenbezogenes Profil gebildet wird. Weitere Informationen: <a href="https://www.goatcounter.com/privacy" target="_blank" rel="noopener noreferrer">GoatCounter Privacy Policy<span class="visually-hidden"> (opens in a new tab)</span></a>.
 
 </div>
 
@@ -100,7 +100,7 @@ Data is processed on servers operated by Hetzner Online GmbH in Germany and Finl
 
 Since the IP address is briefly processed in this way, this is based on Art. 6(1)(f) GDPR (legitimate interest in anonymous traffic analysis to improve the website).
 No consent is required, as no tracking cookie is set and no personal profile is created.
-For more information, see the <a href="https://www.goatcounter.com/privacy" target="_blank" rel="noopener noreferrer">GoatCounter Privacy Policy</a>.
+For more information, see the <a href="https://www.goatcounter.com/privacy" target="_blank" rel="noopener noreferrer">GoatCounter Privacy Policy<span class="visually-hidden"> (opens in a new tab)</span></a>.
 
 </div>
 
@@ -133,7 +133,7 @@ Sie haben das Recht auf:
 - Löschung
 - Einschränkung der Verarbeitung
 - Widerspruch gegen die Verarbeitung, soweit sie auf berechtigtem Interesse beruht (Art. 21 DSGVO) — das betrifft die oben genannte Verarbeitung von Server-Logfiles und Reichweitenmessung
-- Beschwerde bei einer Datenschutzaufsichtsbehörde, z. B. beim für mich zuständigen <a href="https://datenschutz-hamburg.de" target="_blank" rel="noopener noreferrer">Hamburgischen Beauftragten für Datenschutz und Informationsfreiheit (HmbBfDI)</a>
+- Beschwerde bei einer Datenschutzaufsichtsbehörde, z. B. beim für mich zuständigen <a href="https://datenschutz-hamburg.de" target="_blank" rel="noopener noreferrer">Hamburgischen Beauftragten für Datenschutz und Informationsfreiheit (HmbBfDI)<span class="visually-hidden"> (öffnet in einem neuen Tab)</span></a>
 
 </div>
 
@@ -148,7 +148,7 @@ You have the right to:
 - Request deletion
 - Restrict processing
 - Object to processing based on legitimate interest (Art. 21 GDPR) — this covers the server log file and traffic analysis processing described above
-- Lodge a complaint with a supervisory authority, e.g. the <a href="https://datenschutz-hamburg.de" target="_blank" rel="noopener noreferrer">Hamburg Commissioner for Data Protection and Freedom of Information (HmbBfDI)</a>, which is the authority competent for me
+- Lodge a complaint with a supervisory authority, e.g. the <a href="https://datenschutz-hamburg.de" target="_blank" rel="noopener noreferrer">Hamburg Commissioner for Data Protection and Freedom of Information (HmbBfDI)<span class="visually-hidden"> (opens in a new tab)</span></a>, which is the authority competent for me
 
 </div>
 

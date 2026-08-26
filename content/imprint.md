@@ -47,7 +47,7 @@ Germany
 
 E-Mail: [diplomatintech@web.de](mailto:diplomatintech@web.de)
 
-LinkedIn: <a href="https://www.linkedin.com/in/birgit-b-838503207" target="_blank">Birgit Bader</a>
+LinkedIn: <a href="https://www.linkedin.com/in/birgit-b-838503207" target="_blank" rel="noopener noreferrer">Birgit Bader<span class="visually-hidden"> (opens in a new tab)</span></a>
 
 </div>
 
@@ -57,7 +57,7 @@ LinkedIn: <a href="https://www.linkedin.com/in/birgit-b-838503207" target="_blan
 
 Email: [diplomatintech@web.de](mailto:diplomatintech@web.de)
 
-LinkedIn: <a href="https://www.linkedin.com/in/birgit-b-838503207" target="_blank">Birgit Bader</a>
+LinkedIn: <a href="https://www.linkedin.com/in/birgit-b-838503207" target="_blank" rel="noopener noreferrer">Birgit Bader<span class="visually-hidden"> (opens in a new tab)</span></a>
 
 </div>
 
