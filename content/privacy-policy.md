@@ -132,7 +132,8 @@ Sie haben das Recht auf:
 - Berichtigung
 - Löschung
 - Einschränkung der Verarbeitung
-- Beschwerde bei einer zuständigen Datenschutzaufsichtsbehörde
+- Widerspruch gegen die Verarbeitung, soweit sie auf berechtigtem Interesse beruht (Art. 21 DSGVO) — das betrifft die oben genannte Verarbeitung von Server-Logfiles und Reichweitenmessung
+- Beschwerde bei einer Datenschutzaufsichtsbehörde, z. B. beim für mich zuständigen <a href="https://datenschutz-hamburg.de" target="_blank" rel="noopener noreferrer">Hamburgischen Beauftragten für Datenschutz und Informationsfreiheit (HmbBfDI)</a>
 
 </div>
 
@@ -146,13 +147,21 @@ You have the right to:
 - Request correction
 - Request deletion
 - Restrict processing
-- Lodge a complaint with the competent supervisory authority
+- Object to processing based on legitimate interest (Art. 21 GDPR) — this covers the server log file and traffic analysis processing described above
+- Lodge a complaint with a supervisory authority, e.g. the <a href="https://datenschutz-hamburg.de" target="_blank" rel="noopener noreferrer">Hamburg Commissioner for Data Protection and Freedom of Information (HmbBfDI)</a>, which is the authority competent for me
 
 </div>
 
 <div>
 
-### Kontakt
+### Verantwortlicher und Kontakt
+
+Verantwortlicher im Sinne der DSGVO:
+
+**Birgit Bader**  
+Walddörferstraße 305  
+22047 Hamburg  
+Germany
 
 E-Mail: [diplomatintech@web.de](mailto:diplomatintech@web.de)
 
@@ -160,7 +169,14 @@ E-Mail: [diplomatintech@web.de](mailto:diplomatintech@web.de)
 
 <div>
 
-### Contact
+### Controller and contact
+
+Controller within the meaning of the GDPR:
+
+**Birgit Bader**  
+Walddörferstraße 305  
+22047 Hamburg  
+Germany
 
 Email: [diplomatintech@web.de](mailto:diplomatintech@web.de)
 
