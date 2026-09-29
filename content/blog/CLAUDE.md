@@ -25,6 +25,7 @@ slug: "slug-here"
 
 Do a proofread as an American English native / professional proofreader — grammar, typos, punctuation — and apply fixes directly rather than just listing them:
 
+- **No heading before the first body paragraph** (required — fail the review if violated): the post starts with the optional italic lead line, then straight into a normal paragraph. The first `###` comes only after that paragraph. A heading right after the lead reads as a redundant title and it also breaks the teaser on `/blog/`, `/tags/<slug>/` and in the RSS fallback description, which are built from the text start. If you find one, delete it rather than moving it.
 - **Americanize spellings**: realised→realized, colour(s)→color(s), recognise→recognize, learnt→learned, favour→favor, organise→organize, etc.
 - **Americanize constructions**: "couldn't have got" → "couldn't have gotten".
 - **Em dashes**: use `—` (spaced: ` — `) for asides, not a bare hyphen `-`.

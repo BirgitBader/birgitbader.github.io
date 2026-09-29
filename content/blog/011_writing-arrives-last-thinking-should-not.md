@@ -9,8 +9,6 @@ slug: "writing-arrives-last-thinking-should-not"
 
 _Why the technical writer’s perspective belongs in the room before there’s anything to document._
 
-### The work is necessary and still comes last
-
 My mind keeps wandering back to a time when I worked in a highly regulated environment: wind energy and mechanical engineering, where the [European Machinery Directive](https://www.maschinenrichtlinie.de/fileadmin/dokumente/2006-42-EG%20Machinery%20Directive.pdf) governs almost everything.
 Documentation there isn’t optional, and yet it still arrives last, and still becomes the bottleneck.
 I’ve seen the same pattern in every industry since.
