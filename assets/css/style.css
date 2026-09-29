@@ -1667,8 +1667,8 @@ main {
 }
 
 
-.footer-links a[aria-label="LinkedIn"]:hover .footer-social-icon,
-.footer-links a[aria-label="GitHub"]:hover .footer-social-icon {
+.footer-icon-link:hover .footer-social-icon,
+.footer-icon-link:focus-visible .footer-social-icon {
 
   fill: var(--link);
 
@@ -1678,8 +1678,7 @@ main {
 /* Das Icon bleibt 21px, die Trefferflaeche waechst auf 37px.
    Negatives Margin haelt das Layout unveraendert. (WCAG 2.2: min. 24px) */
 
-.footer-links a[aria-label="LinkedIn"],
-.footer-links a[aria-label="GitHub"] {
+.footer-icon-link {
 
   padding: 8px;
 

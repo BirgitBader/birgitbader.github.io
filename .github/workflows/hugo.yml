@@ -3,6 +3,13 @@ name: Deploy Hugo site to GitHub Pages
 on:
   push:
     branches: [main]
+  # Taeglicher Build: Hugo laesst Beitraege mit Datum in der Zukunft weg.
+  # Ohne diesen Lauf wuerde ein terminierter Beitrag (und damit der
+  # RSS-Feed) erst beim naechsten Push online gehen. 05:00 UTC = 06/07 Uhr
+  # in Hamburg. Hinweis: GitHub pausiert Cron-Workflows nach 60 Tagen ohne
+  # Repo-Aktivitaet — ein Push oder manueller Start reaktiviert sie.
+  schedule:
+    - cron: "0 5 * * *"
   # Erlaubt einen manuellen Start ueber den Actions-Tab
   workflow_dispatch:
 
@@ -62,6 +69,11 @@ jobs:
       # birgitbader.com eingetragen wird, stellt es sich von selbst um.
       - name: Build
         run: hugo --gc --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+
+      # QA-Gate: kaputter Feed (ungueltiges XML, relative Links, Duplikate,
+      # Drafts/Zukunftsdaten …) bricht den Build ab, bevor deployt wird.
+      - name: Validate RSS feed
+        run: python3 tests/check_feed.py public
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

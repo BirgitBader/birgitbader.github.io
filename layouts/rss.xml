@@ -1,0 +1,60 @@
+{{- /* RSS-2.0-Feed fuer den Blog, ausgeliefert unter /index.xml.
+
+       Bewusst nur Blogbeitraege — Home, About, Imprint und Datenschutz
+       gehoeren nicht in einen Feed. Drafts und Beitraege mit Datum in der
+       Zukunft sind von Hugo automatisch ausgeschlossen; der taegliche
+       Cron-Build (siehe .github/workflows/hugo.yml) holt terminierte
+       Beitraege dann von selbst nach.
+
+       Volltext in <content:encoded>, damit Leser:innen im Feedreader
+       lesen koennen. Relative Links und Bilder werden absolut gemacht,
+       sonst brechen sie ausserhalb der Seite. */ -}}
+{{- $base := strings.TrimSuffix "/" site.BaseURL -}}
+{{- $posts := where site.RegularPages "Section" "blog" -}}
+{{- $posts = $posts.ByDate.Reverse -}}
+{{- with site.Config.Services.RSS.Limit }}{{ if gt . 0 }}{{ $posts = first . $posts }}{{ end }}{{ end -}}
+{{- $author := printf "%s (%s)" site.Params.email site.Params.author -}}
+{{ printf `<?xml version="1.0" encoding="utf-8"?>` | safeHTML }}
+{{ printf `<?xml-stylesheet href="%s" type="text/xsl"?>` ("feed.xsl" | relURL) | safeHTML }}
+<rss version="2.0"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>{{ site.Title }} — Blog</title>
+    <link>{{ site.Home.Permalink }}blog/</link>
+    <description>{{ site.Params.description }}</description>
+    <language>{{ site.Language.Locale | default "en-us" }}</language>
+    <copyright>© {{ now.Format "2006" }} {{ site.Params.author }}</copyright>
+    <managingEditor>{{ $author }}</managingEditor>
+    <webMaster>{{ $author }}</webMaster>
+    <generator>Hugo {{ hugo.Version }}</generator>
+    <docs>https://www.rssboard.org/rss-specification</docs>
+    <ttl>1440</ttl>
+    {{- with index $posts 0 }}
+    <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" }}</pubDate>
+    <lastBuildDate>{{ .Lastmod.Format "Mon, 02 Jan 2006 15:04:05 -0700" }}</lastBuildDate>
+    {{- end }}
+    <atom:link href="{{ "index.xml" | absURL }}" rel="self" type="application/rss+xml"/>
+    {{- range $posts }}
+    {{- $permalink := .Permalink }}
+    {{- $html := .Content
+          | replaceRE `(href|src)="/([^/"])` (printf `${1}="%s/${2}` $base)
+          | replaceRE `href="#` (printf `href="%s#` $permalink) }}
+    {{- /* "]]>" im Inhalt wuerde den CDATA-Block vorzeitig beenden */ -}}
+    {{- $html = replace $html "]]>" "]]]]><![CDATA[>" }}
+    <item>
+      <title>{{ .Title }}</title>
+      <link>{{ $permalink }}</link>
+      <guid isPermaLink="true">{{ $permalink }}</guid>
+      <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" }}</pubDate>
+      <dc:creator>{{ site.Params.author }}</dc:creator>
+      {{- range .GetTerms "tags" }}
+      <category>{{ .Title }}</category>
+      {{- end }}
+      <description>{{ .Description | default (.Summary | plainify | truncate 200) }}</description>
+      <content:encoded>{{ printf "<![CDATA[%s]]>" $html | safeHTML }}</content:encoded>
+    </item>
+    {{- end }}
+  </channel>
+</rss>

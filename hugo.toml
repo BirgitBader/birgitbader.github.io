@@ -5,6 +5,10 @@ title = "Birgit Bader"
 
 enableRobotsTXT = true
 
+# Feste Zeitzone, damit Beitragsdaten (nur Datum, ohne Uhrzeit) lokal und in
+# der CI identisch interpretiert werden — sonst wandern pubDate/guid-Zeiten.
+timeZone = "Europe/Berlin"
+
 # CLAUDE.md-Dateien in content/ sind interne Konventionen, nicht fuer den Build
 ignoreFiles = ['CLAUDE\.md$']
 
@@ -18,6 +22,14 @@ disableKinds = ["taxonomy"]
 [taxonomies]
   tag = "tags"
 
+# RSS nur auf der Startseite (/index.xml, ein Blog-Feed). Sektions- und
+# Tag-Seiten bekommen keinen eigenen Feed — weniger Flaeche, die stimmen muss.
+[outputs]
+  home = ["html", "rss"]
+  section = ["html"]
+  taxonomy = ["html"]
+  term = ["html"]
+
 # Teaser-Laenge fuer .Summary (Woerter)
 summaryLength = 40
 
@@ -26,7 +38,7 @@ summaryLength = 40
   # Max. ~160 Zeichen, sonst schneidet Google ab. Der Name steht im Titel
   # direkt darueber, muss hier also nicht wiederholt werden.
   description = "Technical communication expert and information architect in Hamburg. Helps knowledge move where different disciplines, priorities, and perspectives meet."
-  architect = "Birgit Bader"
+  author = "Birgit Bader"
   ogImage = "/images/og-image.png"
   email = "diplomatintech@web.de"
   linkedin = "https://www.linkedin.com/in/birgit-b-838503207"

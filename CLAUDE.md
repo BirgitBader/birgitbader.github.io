@@ -14,6 +14,14 @@ Personal site + blog, built with Hugo. Content lives under `content/`, one Markd
 
 As conventions for other content areas (about page, imprint, etc.) come up, add a `CLAUDE.md` next to that content and link it here.
 
+## RSS feed
+
+- One feed, blog posts only, at `/index.xml` (template: `layouts/rss.xml`; browser styling: `static/feed.xsl`). Section and tag feeds are disabled in `hugo.toml` `[outputs]`.
+- Full post content in `content:encoded`; relative links/images are made absolute in the template. Don't hand-edit URLs in posts for the feed's sake.
+- Updates itself: every push to `main` rebuilds and deploys, and a daily cron build in `.github/workflows/hugo.yml` publishes future-dated posts.
+- CI runs `python3 tests/check_feed.py public` after the build and blocks the deploy on a broken feed. Run it locally the same way after `hugo`.
+- Changing `/index.xml` breaks existing subscribers — treat the path as permanent (see Redirects).
+
 ## Redirects
 
 This site has no automatic redirect mechanism — renaming a post `slug` or a tag value breaks the old URL permanently unless a redirect is added, and old links (search engine index, social shares, bookmarks) keep pointing at it indefinitely. This already caused real 404s in production once (a pre-launch URL cleanup and an August 2026 tag rename, both without redirects).

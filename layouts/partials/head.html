@@ -88,7 +88,7 @@
 
 {{- /* RSS-Autodiscovery — auf jeder Seite auf den Site-Feed zeigen */ -}}
 {{- with site.Home.OutputFormats.Get "rss" }}
-<link rel="alternate" type="application/rss+xml" href="{{ .Permalink }}" title="{{ site.Title }}">
+<link rel="alternate" type="application/rss+xml" href="{{ .Permalink }}" title="{{ site.Title }} — Blog">
 {{- end }}
 
 {{- /* Strukturierte Daten */ -}}
