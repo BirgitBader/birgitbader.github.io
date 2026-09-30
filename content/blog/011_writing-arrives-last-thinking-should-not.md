@@ -15,9 +15,9 @@ I’ve seen the same pattern in every industry since.
 
 ### The thing that happens at the end
 
-A typical product development process looks like this: requirements, design, prototypes, risk assessment, and conformity work, the paperwork trail that has to add up to a technical file before a machine can carry a CE mark.
+A typical product development process looks like this: requirements, design, prototypes, risk assessment, and conformity work, the paperwork trail that has to add up to a technical file before a machine can carry a CE (European Conformity) mark.
 Somewhere near the end, someone writes the instructions for use, the one document the Machinery Directive names explicitly, required in the language of every country the machine ships to.
-No instructions, no technical file, no CE (European Conformity) mark, no legal sale.
+No instructions, no technical file, no CE mark, no legal sale.
 So why does something this essential get treated as if it could wait?
 
 Because that’s exactly when the pressure hits: information arrives late, terminology has drifted, specifications have changed, and everything still has to be written, reviewed, translated, and delivered on a deadline set without any of that in mind.
