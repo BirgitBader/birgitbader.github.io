@@ -14,8 +14,16 @@
 
   <div class="hero-text">
 
+    {{/* Jeder Begriff bleibt zusammen, umgebrochen wird nur nach einem
+         Trennpunkt — sonst reisst z.B. "Knowledge Management" auseinander. */}}
     {{ with .Params.kicker }}
-      <p class="hero-kicker">{{ . }}</p>
+      {{ $parts := split . " · " }}
+      <p class="hero-kicker">
+        {{- range $i, $part := $parts -}}
+          {{- if $i }} {{ end -}}
+          <span class="hero-kicker-item">{{ $part }}{{ if lt (add $i 1) (len $parts) }} ·{{ end }}</span>
+        {{- end -}}
+      </p>
     {{ end }}
 
     <h1 class="hero-name">Birgit Bader</h1>

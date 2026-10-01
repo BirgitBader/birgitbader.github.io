@@ -9,7 +9,7 @@ A selection of where I've spoken and what I've published in the context of techn
 ## Talks
 
 - **[betterCode() ArchDoc](https://archdoc.bettercode.eu/veranstaltung-88234-se-0-if-it%2527s-not-documented-it-doesn%2527t-exist.--5-hacks-wie-relevante-infos-im-sdlc-ueberleben.html)** — "If it's not documented, it doesn't exist. – 5 Hacks, wie relevante Infos im SDLC überleben." _May 20, 2026_
-- **[JavaLand](https://meine.doag.org/events/javaland/2025/agenda/#eventDay.1743458400)** — "Das hätten wir dokumentieren sollen... Entwicklungsprozesse optimieren durch Zugang zu Fachwisssen." _April 1, 2025_
+- **[JavaLand](https://meine.doag.org/events/javaland/2025/agenda/#eventDay.1743458400)** — "Das hätten wir dokumentieren sollen... Entwicklungsprozesse optimieren durch Zugang zu Fachwissen." _April 1, 2025_
 - **[betterCode() API](https://api.bettercode.eu/2023/veranstaltung-20313-se-0-warum-api-guidelines-eine-coole-sache-sind.html)** - "Warum API Guidelines eine coole Sache sind." _March 30, 2023_
 
 ## Publications

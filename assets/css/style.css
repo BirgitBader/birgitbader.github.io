@@ -660,6 +660,13 @@ main {
 }
 
 
+.hero-kicker-item {
+
+  white-space: nowrap;
+
+}
+
+
 .hero-name {
 
   font-size: clamp(2.4rem, 4.6vw, 3.4rem);
