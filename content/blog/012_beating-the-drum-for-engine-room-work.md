@@ -1,10 +1,10 @@
 ---
-title: "My job only makes sense once you’ve worked with me"
+title: "Beating the drum for engine-room work"
 date: 2026-10-05
 description: "A friend’s job fits in one sentence, mine takes a paragraph. On work that’s hard to point at, and why the best description of it is what stays behind."
 tags: ["career"]
 draft: false
-slug: "my-job-only-makes-sense-once-youve-worked-with-me"
+slug: "beating-the-drum-for-engine-room-work"
 ---
 
 _On doing your best work where nobody looks, and what that means for being seen._
