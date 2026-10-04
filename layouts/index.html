@@ -39,8 +39,16 @@
 
     <span class="hero-rule" aria-hidden="true"></span>
 
+    {{/* Statement als Liste: jeder Satz bekommt eine eigene Zeile.
+         Ein einzelner String funktioniert weiterhin. */}}
     {{ with .Params.statement }}
-      <p class="hero-statement">{{ . }}</p>
+      {{ $lines := cond (reflect.IsSlice .) . (slice .) }}
+      <p class="hero-statement">
+        {{- range $i, $line := $lines -}}
+          {{- if $i }} {{ end -}}
+          <span class="hero-statement-line">{{ $line }}</span>
+        {{- end -}}
+      </p>
     {{ end }}
 
     <div class="hero-body">
@@ -48,8 +56,8 @@
     </div>
 
     <p class="hero-actions">
-      <a class="link-action" href="/about/">About me<span class="link-action-arrow" aria-hidden="true">→</span></a>
-      <a class="link-action" href="/blog/">Read the blog<span class="link-action-arrow" aria-hidden="true">→</span></a>
+      <a class="link-action" href="/about/">Get to know me<span class="link-action-arrow" aria-hidden="true">→</span></a>
+      <a class="link-action" href="/blog/">How I think<span class="link-action-arrow" aria-hidden="true">→</span></a>
     </p>
 
   </div>

@@ -720,6 +720,13 @@ main {
 }
 
 
+.hero-statement-line {
+
+  display: block;
+
+}
+
+
 .hero-body p {
 
   margin: 0 0 1.1em 0;
@@ -1139,6 +1146,13 @@ main {
   font-size: 1.05rem;
 
   margin-bottom: 0;
+
+}
+
+
+.list-intro p + p {
+
+  margin-top: 0.8em;
 
 }
 
@@ -1667,6 +1681,21 @@ main {
   padding-top: 32px;
 
   border-top: 1px solid rgba(0,0,0,0.12);
+
+}
+
+
+/* Leise Schlusszeile unter der Beitragsnavigation */
+
+.post-signoff {
+
+  max-width: 68ch;
+
+  margin: -16px 0 40px;
+
+  font-size: 0.9rem;
+
+  color: var(--muted);
 
 }
 
