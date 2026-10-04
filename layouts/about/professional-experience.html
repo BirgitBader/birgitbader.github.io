@@ -1,0 +1,45 @@
+{{ define "main" }}
+
+{{/* Seite „Professional experience“: Stationen, Ausbildung, Sprachen und Tools kommen aus dem
+     Frontmatter von content/about/professional-experience.md. Die Seite hat keinen Fliesstext. */}}
+<article class="about professional-experience">
+
+  <p class="post-back">
+    <a href="/about/"><span aria-hidden="true">←</span> About</a>
+  </p>
+
+  <h1>{{ .Title }}</h1>
+
+  {{ with .Params.experience }}
+  {{ partial "professional-experience-timeline.html" . }}
+  {{ end }}
+
+  {{ with .Params.education }}
+  <h2>Education</h2>
+  {{ partial "professional-experience-timeline.html" . }}
+  {{ end }}
+
+  {{ with .Params.languages }}
+  <h2>Languages</h2>
+  <dl class="professional-experience-languages">
+    {{ range . }}
+    <div>
+      <dt>{{ .name }}</dt>
+      <dd>{{ .level }}</dd>
+    </div>
+    {{ end }}
+  </dl>
+  {{ end }}
+
+  {{ with .Params.tools }}
+  <h2>Tools and technologies</h2>
+  <ul class="professional-experience-tools">
+    {{ range . }}
+    <li>{{ . }}</li>
+    {{ end }}
+  </ul>
+  {{ end }}
+
+</article>
+
+{{ end }}

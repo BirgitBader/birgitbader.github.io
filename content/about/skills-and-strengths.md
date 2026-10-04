@@ -30,4 +30,4 @@ I work in the space between different roles, responsibility levels, organization
 - [My blog](/blog/)
 - [Talks and publications](/about/talks-and-publications/)
 
-For the roles and timeline, see my [CV](/files/cv_birgit-bader.pdf).
+For the roles and timeline, see [Professional experience](/about/professional-experience/).

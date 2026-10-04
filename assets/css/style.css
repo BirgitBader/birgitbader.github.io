@@ -852,7 +852,7 @@ main {
 }
 
 
-/* Professional-background links (CV, talks, portfolio, …) */
+/* Professional-background links (experience, talks, portfolio, …) */
 
 .about .link-list {
 
@@ -869,6 +869,243 @@ main {
   padding-left: 0;
 
 }
+
+
+/* =========================
+   PROFESSIONAL EXPERIENCE
+========================= */
+
+/* Zeitstrahl: Linie und Punkte als Pseudo-Elemente, kein Bild.
+   Der Punkt sitzt auf der Mitte der ersten Rollenzeile, die Linie
+   verbindet ihn mit dem Punkt der naechsten Station. */
+.professional-experience-timeline {
+
+  list-style: none;
+
+  margin: 0;
+
+  padding: 0;
+
+}
+
+
+.professional-experience-station {
+
+  --dot: 12px;
+
+  --dot-top: calc(0.75rem - var(--dot) / 2);
+
+  position: relative;
+
+  padding: 0 0 2.5rem 2rem;
+
+}
+
+
+.professional-experience-station:last-child {
+
+  padding-bottom: 0;
+
+}
+
+
+.professional-experience-station::before {
+
+  content: "";
+
+  position: absolute;
+
+  left: calc(var(--dot) / 2 - 1px);
+
+  top: calc(var(--dot-top) + var(--dot) / 2);
+
+  bottom: calc(-1 * (var(--dot-top) + var(--dot) / 2));
+
+  width: 2px;
+
+  background: var(--tint-strong);
+
+}
+
+
+.professional-experience-station:last-child::before {
+
+  display: none;
+
+}
+
+
+.professional-experience-station::after {
+
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+
+  top: var(--dot-top);
+
+  width: var(--dot);
+
+  height: var(--dot);
+
+  border-radius: 50%;
+
+  background: var(--accent);
+
+}
+
+
+/* Aktuelle Station: kraeftiger Punkt mit Hof */
+.professional-experience-station-current::after {
+
+  background: var(--accent-strong);
+
+  box-shadow: 0 0 0 4px var(--tint-strong);
+
+}
+
+
+.about .professional-experience-role {
+
+  font-size: 1.1rem;
+
+  font-weight: 600;
+
+  line-height: 1.5rem;
+
+  margin: 0 0 0.2rem;
+
+}
+
+
+.professional-experience-meta {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  align-items: baseline;
+
+  gap: 8px;
+
+  font-size: 0.85rem;
+
+  color: var(--muted);
+
+  margin: 0 0 0.75rem;
+
+}
+
+
+.professional-experience-org {
+
+  color: var(--link);
+
+  font-weight: 600;
+
+}
+
+
+.professional-experience-highlights {
+
+  margin: 0;
+
+  padding-left: 1.1rem;
+
+  list-style: disc;
+
+}
+
+
+.professional-experience-highlights li {
+
+  margin-bottom: 0.35em;
+
+  line-height: 1.7;
+
+}
+
+
+.professional-experience-highlights li:last-child {
+
+  margin-bottom: 0;
+
+}
+
+
+.professional-experience-highlights li::marker {
+
+  color: var(--accent-strong);
+
+}
+
+
+.professional-experience-languages {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 12px 40px;
+
+  margin: 0;
+
+}
+
+
+.professional-experience-languages dt {
+
+  font-weight: 600;
+
+}
+
+
+.professional-experience-languages dd {
+
+  margin: 0;
+
+  color: var(--muted);
+
+  font-size: 0.95rem;
+
+}
+
+
+/* Gleiche Optik wie .tag-pill, aber ohne Link */
+.professional-experience-tools {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  list-style: none;
+
+  margin: 0;
+
+  padding: 0;
+
+}
+
+
+.professional-experience-tools li {
+
+  padding: 3px 10px;
+
+  border-radius: 4px;
+
+  background: var(--tint);
+
+  color: var(--link);
+
+  font-size: 0.85rem;
+
+  font-weight: 500;
+
+}
+
 
 
 /* =========================

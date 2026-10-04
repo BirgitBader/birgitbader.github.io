@@ -1,0 +1,37 @@
+{{/* Zeitstrahl fuer Berufsstationen und Ausbildung. Erwartet eine Liste mit role, org,
+     optional from/to ("JJJJ-MM") und highlights.
+     Ohne "to" ist die Station aktuell, ohne "from" zaehlt nur das Enddatum. */}}
+<ol class="professional-experience-timeline">
+  {{ range . }}
+  <li class="professional-experience-station{{ if not .to }} professional-experience-station-current{{ end }}">
+
+    <h3 class="professional-experience-role">{{ .role }}</h3>
+
+    <p class="professional-experience-meta">
+      <span class="professional-experience-org">{{ .org }}</span>
+      <span aria-hidden="true">·</span>
+      <span>
+        {{- with .from -}}
+          {{- $from := time.AsTime (printf "%s-01" .) -}}
+          <time datetime="{{ $from.Format "2006-01" }}">{{ $from.Format "Jan 2006" }}</time> –{{ " " }}
+        {{- end -}}
+        {{- with .to -}}
+          {{- $to := time.AsTime (printf "%s-01" .) -}}
+          <time datetime="{{ $to.Format "2006-01" }}">{{ $to.Format "Jan 2006" }}</time>
+        {{- else -}}
+          present
+        {{- end -}}
+      </span>
+    </p>
+
+    {{ with .highlights }}
+    <ul class="professional-experience-highlights">
+      {{ range . }}
+      <li>{{ . | markdownify }}</li>
+      {{ end }}
+    </ul>
+    {{ end }}
+
+  </li>
+  {{ end }}
+</ol>

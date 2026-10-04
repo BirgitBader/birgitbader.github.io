@@ -17,6 +17,9 @@ ignoreFiles = ['CLAUDE\.md$']
 # bleiben ueber "term" aktiv.
 disableKinds = ["taxonomy"]
 
+# Teaser-Laenge fuer .Summary (Woerter)
+summaryLength = 40
+
 # Nur "tags" als Taxonomie — "categories" ist ungenutzt und soll nicht
 # automatisch mitgebaut werden.
 [taxonomies]
@@ -29,9 +32,6 @@ disableKinds = ["taxonomy"]
   section = ["html"]
   taxonomy = ["html"]
   term = ["html"]
-
-# Teaser-Laenge fuer .Summary (Woerter)
-summaryLength = 40
 
 [params]
   # Fallback-Description fuer Startseite, 404 und Seiten ohne eigene.

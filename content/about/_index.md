@@ -29,7 +29,7 @@ Twice, I was hired to write and ended up pioneering: [the full story is on my bl
 
 ## Beyond the day job
 
-I speak at conferences like JavaLand and betterCode(), mentor young talent, cultivate my website, and volunteer as a job ambassador for technical communication.
+I speak at conferences, mentor young talent, cultivate my website, and volunteer as a job ambassador at [HANZ](https://hanz.hamburg/).
 
 Curiosity brought me to this profession.
 Sharing what I've learned is what keeps me excited about it.
@@ -38,6 +38,11 @@ Sharing what I've learned is what keeps me excited about it.
 
 <ul class="link-list">
   <li>
+    <a class="link-action" href="/about/professional-experience/" target="_blank" rel="noopener noreferrer">
+      Professional experience<span class="link-action-arrow" aria-hidden="true">→</span><span class="visually-hidden"> (opens in a new tab)</span>
+    </a>
+  </li>
+  <li>
     <a class="link-action" href="/about/skills-and-strengths/" target="_blank" rel="noopener noreferrer">
       Skills and strengths<span class="link-action-arrow" aria-hidden="true">→</span><span class="visually-hidden"> (opens in a new tab)</span>
     </a>
@@ -45,11 +50,6 @@ Sharing what I've learned is what keeps me excited about it.
   <li>
     <a class="link-action" href="/about/talks-and-publications/" target="_blank" rel="noopener noreferrer">
       Talks and publications<span class="link-action-arrow" aria-hidden="true">→</span><span class="visually-hidden"> (opens in a new tab)</span>
-    </a>
-  </li>
-  <li>
-    <a class="link-action" href="/files/cv_birgit-bader.pdf" target="_blank" rel="noopener noreferrer">
-      View my CV<span class="link-action-arrow" aria-hidden="true">→</span><span class="visually-hidden"> (PDF, opens in a new tab)</span>
     </a>
   </li>
   <li>
