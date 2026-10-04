@@ -37,9 +37,10 @@ summaryLength = 40
   # Fallback-Description fuer Startseite, 404 und Seiten ohne eigene.
   # Max. ~160 Zeichen, sonst schneidet Google ab. Der Name steht im Titel
   # direkt darueber, muss hier also nicht wiederholt werden.
-  description = "Technical communication expert and information architect in Hamburg. Helps knowledge move where different disciplines, priorities, and perspectives meet."
+  description = "Technical communication and knowledge management in Hamburg. Finds where knowledge gets stuck and builds the structures that move it, for people and AI."
   author = "Birgit Bader"
-  ogImage = "/images/og-image.png"
+  # Liegt unter assets/ (nicht static/), damit die URL einen Fingerprint bekommt.
+  ogImage = "images/og-image.png"
   email = "diplomatintech@web.de"
   linkedin = "https://www.linkedin.com/in/birgit-b-838503207"
   jobTitle = "Technical Communication & Knowledge Management"

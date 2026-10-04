@@ -1,7 +1,7 @@
 {{- /* Zentrale Ableitung von Titel, Beschreibung und Social-Bild */ -}}
 
-{{- /* $title fuer den Browser-Tab und Google, $ogTitle ohne Namenszusatz
-       fuer Social-Karten — dort steht der Name schon in og:site_name. */ -}}
+{{- /* $title fuer den Browser-Tab und Google, $ogTitle fuer Social-Karten
+       (LinkedIn zeigt og:site_name nicht an, nur die Domain). */ -}}
 {{- $title := "" -}}
 {{- $ogTitle := "" -}}
 {{- if .IsHome -}}
@@ -9,7 +9,14 @@
   {{- $ogTitle = $title -}}
 {{- else -}}
   {{- $title = printf "%s | %s" .Title site.Title -}}
-  {{- $ogTitle = .Title -}}
+  {{- /* Blogbeitraege tragen ihren Titel allein — der ist der Aufhaenger.
+         Alle anderen Seiten bekommen den Namen dazu, sonst steht auf
+         einer LinkedIn-Karte nur "About" oder "Professional experience". */ -}}
+  {{- if and .IsPage (eq .Section "blog") -}}
+    {{- $ogTitle = .Title -}}
+  {{- else -}}
+    {{- $ogTitle = printf "%s — %s" .Title site.Title -}}
+  {{- end -}}
 {{- end -}}
 
 {{- $description := site.Params.description -}}
@@ -23,7 +30,18 @@
   {{- end -}}
 {{- end -}}
 
-{{- $ogImage := absURL (.Params.image | default site.Params.ogImage) -}}
+{{- /* Social-Bild mit Fingerprint im Dateinamen: aendert sich das Bild,
+       aendert sich die URL — LinkedIn & Co. holen es dann neu, statt
+       wochenlang die alte Version aus ihrem Cache zu zeigen.
+       Vorlage und Anleitung: tools/og-image.html */ -}}
+{{- $ogImage := "" -}}
+{{- with .Params.image -}}
+  {{- $ogImage = absURL . -}}
+{{- else -}}
+  {{- with resources.Get site.Params.ogImage -}}
+    {{- $ogImage = (. | resources.Fingerprint "sha256").Permalink -}}
+  {{- end -}}
+{{- end -}}
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -52,7 +70,7 @@
 <meta property="og:image" content="{{ $ogImage }}">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Birgit Bader — Diplomat in Tech. Technical Writer. Information Architect.">
+<meta property="og:image:alt" content="Birgit Bader — Diplomat in Tech. Technical Communication. Knowledge Management.">
 
 {{- if and .IsPage (eq .Section "blog") }}
 <meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
