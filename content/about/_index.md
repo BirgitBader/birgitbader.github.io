@@ -1,15 +1,24 @@
 ---
 title: "About"
-description: "Technical communication and knowledge management in Hamburg. 15+ years building documentation, knowledge structures, and developer experience, currently at OTTO."
+description: "Diplomat in tech in Hamburg: finding where work gets stuck and why, and creating the standards, patterns, and developer experience that remove the friction."
 type: "about"
 outputs: ["html"]
 ---
 
-Hi, I'm Birgit.
-I build the structures that help knowledge move: documentation, developer portals, and knowledge bases that work for people and AI alike.
-Right now, I'm a Technical Writing Expert at OTTO in Hamburg, where I established technical writing as a discipline and laterally lead the team that grew around it.
+Business wants outcomes, engineers want clarity, users want something that works, and systems need structure.
+As a diplomat in tech, I make sure all of them are heard and that they come together.
 
-**Knowledge becomes valuable when it reaches the people who need it, the way they need it.**
+Hi, I'm Birgit.
+I find out where work gets stuck and why, then create what removes the friction: standards people actually follow, patterns teams can reuse, and a better developer experience.
+Right now, I'm a Technical Writing Expert at OTTO in Hamburg, where I established technical writing as a discipline, made it an official role, and paved the way for more technical writers.
+
+**Knowledge becomes valuable when it reaches the people and systems that need it, when and how they need it.**
+
+<p>
+  <a class="link-action" href="/about/professional-experience/">
+    Professional experience<span class="link-action-arrow" aria-hidden="true">→</span>
+  </a>
+</p>
 
 ## What I've built
 
@@ -29,7 +38,7 @@ Twice, I was hired to write and ended up pioneering: [the full story is on my bl
 
 ## Beyond the day job
 
-I speak at conferences, mentor young talent, cultivate my website, and volunteer as a job ambassador at [HANZ](https://hanz.hamburg/).
+I speak at conferences, mentor young talent, cultivate my website, and volunteer as a job ambassador at [Mein Jobbotschafter](https://meinjobbotschafter.de/en).
 
 Curiosity brought me to this profession.
 Sharing what I've learned is what keeps me excited about it.
