@@ -1,6 +1,13 @@
 ---
 title: "Blog"
-description: "Thoughts on technical communication, knowledge architecture, and clarity in complex systems by technical communication expert Birgit Bader."
+description: "Birgit Bader on the friction in tech that isn’t technical, and the knowledge work that removes it: documentation, developer experience, knowledge management."
+
+# Empfohlene Beitraege — erscheinen als Satz unter der Einleitung auf /blog/:
+# "The essentials to start with: X, Y, and Z." Eintraege sind slugs, in Reihenfolge.
+essentials:
+  - "documentation-is-product-thinking"
+  - "helping-knowledge-move"
+  - "hired-to-write-ended-up-pioneering"
 ---
 
-Thoughts and reflections on technical communication, knowledge architecture, clarity in complex systems, and what my head desperately wants to put down on digital paper.
+On the friction that isn’t technical, and the knowledge work that removes it.
