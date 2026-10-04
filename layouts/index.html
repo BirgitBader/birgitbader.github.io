@@ -2,13 +2,22 @@
 
 {{ $portrait := resources.Get "images/birgit.jpg" }}
 
-{{/* WebP fuer alles ab Safari 14 / Chrome 32, JPEG als Rueckfall fuer
+{{/* Schon beim Build auf 4:5 zugeschnitten (wie im CSS angezeigt) —
+     sonst laedt der Browser ein Querformat und wirft die Haelfte weg.
+     Breiten fuer max. 380 px (Desktop) bzw. 260 px (Mobil) Anzeige:
+       380 = Desktop 1x, 520 = Mobil 2x, 780 = Desktop 2x / Mobil 3x,
+       1140 = Desktop 3x — damit auch HD-Bildschirme scharf bleiben.
+     Die Quelldatei muss dafuer mind. 1425 px hoch sein.
+
+     WebP fuer alles ab Safari 14 / Chrome 32, JPEG als Rueckfall fuer
      aeltere Browser. Ohne den Rueckfall bliebe dort schlicht eine
      Leerstelle statt des Portraits. */}}
-{{ $webpSmall := $portrait.Resize "440x webp q82" }}
-{{ $webpLarge := $portrait.Resize "880x webp q80" }}
-{{ $jpgSmall  := $portrait.Resize "440x jpg q85" }}
-{{ $jpgLarge  := $portrait.Resize "880x jpg q82" }}
+{{ $webp380  := $portrait.Fill "380x475 webp q80 Center" }}
+{{ $webp520  := $portrait.Fill "520x650 webp q80 Center" }}
+{{ $webp780  := $portrait.Fill "780x975 webp q75 Center" }}
+{{ $webp1140 := $portrait.Fill "1140x1425 webp q75 Center" }}
+{{ $jpgSmall := $portrait.Fill "380x475 jpg q82 Center" }}
+{{ $jpgLarge := $portrait.Fill "780x975 jpg q80 Center" }}
 
 <section class="hero">
 
@@ -51,12 +60,12 @@
 
       <source
         type="image/webp"
-        srcset="{{ $webpSmall.RelPermalink }} 440w, {{ $webpLarge.RelPermalink }} 880w"
+        srcset="{{ $webp380.RelPermalink }} 380w, {{ $webp520.RelPermalink }} 520w, {{ $webp780.RelPermalink }} 780w, {{ $webp1140.RelPermalink }} 1140w"
         sizes="(max-width: 800px) 260px, 380px">
 
       <img
         src="{{ $jpgSmall.RelPermalink }}"
-        srcset="{{ $jpgSmall.RelPermalink }} 440w, {{ $jpgLarge.RelPermalink }} 880w"
+        srcset="{{ $jpgSmall.RelPermalink }} 380w, {{ $jpgLarge.RelPermalink }} 780w"
         sizes="(max-width: 800px) 260px, 380px"
         width="{{ $jpgLarge.Width }}"
         height="{{ $jpgLarge.Height }}"
