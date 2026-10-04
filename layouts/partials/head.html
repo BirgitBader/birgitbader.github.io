@@ -35,11 +35,15 @@
        wochenlang die alte Version aus ihrem Cache zu zeigen.
        Vorlage und Anleitung: tools/og-image.html */ -}}
 {{- $ogImage := "" -}}
+{{- $ogImageWidth := 1200 -}}
+{{- $ogImageHeight := 627 -}}
 {{- with .Params.image -}}
   {{- $ogImage = absURL . -}}
 {{- else -}}
   {{- with resources.Get site.Params.ogImage -}}
     {{- $ogImage = (. | resources.Fingerprint "sha256").Permalink -}}
+    {{- $ogImageWidth = .Width -}}
+    {{- $ogImageHeight = .Height -}}
   {{- end -}}
 {{- end -}}
 
@@ -68,8 +72,8 @@
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="{{ $ogImage }}">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
+<meta property="og:image:width" content="{{ $ogImageWidth }}">
+<meta property="og:image:height" content="{{ $ogImageHeight }}">
 <meta property="og:image:alt" content="Birgit Bader — Diplomat in Tech. Technical Communication. Knowledge Management.">
 
 {{- if and .IsPage (eq .Section "blog") }}

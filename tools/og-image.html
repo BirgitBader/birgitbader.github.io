@@ -1,10 +1,11 @@
 <!doctype html>
 <!--
-  Vorlage fuer das Vorschaubild beim Teilen (LinkedIn, Slack, X …), 1200 x 630.
+  Vorlage fuer das Vorschaubild beim Teilen (LinkedIn, Slack, X …), 1200 x 627 —
+  das von LinkedIn empfohlene Format.
   Nach einer Textaenderung neu erzeugen (aus dem Repo-Root):
 
     "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new \
-      --hide-scrollbars --window-size=1200,630 --force-device-scale-factor=1 \
+      --hide-scrollbars --window-size=1200,627 --force-device-scale-factor=1 \
       --screenshot="$PWD/assets/images/og-image.png" "file://$PWD/tools/og-image.html"
 
   Die Bild-URL bekommt beim Build einen Fingerprint — ein neues Bild hat damit
@@ -18,7 +19,7 @@
   html, body {
     margin: 0;
     width: 1200px;
-    height: 630px;
+    height: 627px;
     overflow: hidden;
   }
 
